@@ -5,6 +5,7 @@
 
 ## 软件依赖
 G2O GLOG(含youibot log system) GFLAGS
+用到的python功能包: math matplotlib 
 
 ## 注意事项
 计算机上需要预先安装G2O 
