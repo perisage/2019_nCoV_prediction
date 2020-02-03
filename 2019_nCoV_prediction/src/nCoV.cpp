@@ -18,6 +18,7 @@ nCoV::nCoV()
     {
         _yData.push_back(tempData);
     }
+    _dataFile.close();
     for (size_t i = 0; i < _yData.size(); ++i) // 从2020.1.17日开始计算到当前日期(以天为单位)
     {
         _xData.push_back(i);
@@ -84,6 +85,16 @@ void nCoV::optimize()
     _parameterEstimated = vertex->estimate();
     LOG_INFO << "estimated matrix: " << _parameterEstimated.transpose();
     LOG_INFO << "estimated SIR model: y=" << _parameterEstimated[0] << "*" << _parameterEstimated[1] << "/(" << _parameterEstimated[1] << "+(" << _parameterEstimated[0] << "-" << _parameterEstimated[1] << ")e^(-" << _parameterEstimated[2] << "x))";
+
+    std::ofstream parameterFile("../data/parameter.txt"); // 数据文件
+    if (!parameterFile.is_open())
+    {
+        LOG_FATAL << "write parameter file failed and program exit!";
+    }
+
+    parameterFile << _parameterEstimated[0] << " " << _parameterEstimated[1] << " " << _parameterEstimated[2];
+    parameterFile.close();
+    LOG_INFO << "load data file successfully!";
 }
 
 //! 感染人数预测
@@ -93,7 +104,6 @@ void nCoV::optimize()
  **/
 void nCoV::predict(int predictDays)
 {
-
     time_t currentTime = time(0);     // 获取当前日期
     std::stringstream strTime;        // 用以将日期转为字符串
     LOG_INFO << "  date\t\tinfected"; // 表格标题

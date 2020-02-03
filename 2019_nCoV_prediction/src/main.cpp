@@ -16,10 +16,13 @@ int main(int argc, char **argv)
     // 解析gflags 参数
     gflags::ParseCommandLineFlags(&argc, &argv, true);
 
-    LOG_INFO << "get predictDays: " << FLAGS_d;
+    LOG_HINT(LOG_GREEN) << "get predictDays: " << FLAGS_d;
 
     nCoV ncov;
     ncov.optimize();       // 模型优化
     ncov.predict(FLAGS_d); // 感染人数预测
-    return 0;
+
+    // 调用python脚本绘制曲线
+    const char *cmd = "python ../scripts/plot_sir.py";
+    return system(cmd);
 }
