@@ -4,7 +4,7 @@
 2019_nCoV 每日感染人数预测
 
 ## 软件依赖
-G2O
+G2O GLOG(含youibot log system)
 
 ## 注意事项
 计算机上需要预先安装G2O 
