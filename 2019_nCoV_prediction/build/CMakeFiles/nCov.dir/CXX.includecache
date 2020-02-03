@@ -56,9 +56,9 @@ curve_fitting_edge.h
 curve_fitting_vertex.h
 ../include/curve_fitting_vertex.h
 
-/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp
+/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp
 nCoV.h
-/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.h
+/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.h
 
 /usr/include/eigen3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h

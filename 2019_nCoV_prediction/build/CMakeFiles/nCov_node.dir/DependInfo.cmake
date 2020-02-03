@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/src/main.cpp" "/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build/CMakeFiles/nCov_node.dir/src/main.cpp.o"
+  "/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/2019_nCoV_prediction/src/main.cpp" "/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/2019_nCoV_prediction/build/CMakeFiles/nCov_node.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,7 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build/CMakeFiles/nCov.dir/DependInfo.cmake"
+  "/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/2019_nCoV_prediction/build/CMakeFiles/nCov.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

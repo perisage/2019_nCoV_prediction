@@ -13,6 +13,5 @@ int main(int argc, char **argv)
     nCoV ncov;
     ncov.optimize(); // 模型优化
     ncov.predict(5); // 感染人数预测
-
     return 0;
 }
