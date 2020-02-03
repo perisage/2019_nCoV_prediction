@@ -57,6 +57,8 @@ curve_fitting_vertex.h
 ../include/curve_fitting_vertex.h
 
 /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/2019_nCoV_prediction/src/main.cpp
+gflags/gflags.h
+-
 nCoV.h
 /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.h
 
@@ -1451,4 +1453,26 @@ g2o_stuff_api.h
 /usr/local/include/g2o/stuff/g2o_stuff_api.h
 g2o/stuff/misc.h
 /usr/local/include/g2o/stuff/g2o/stuff/misc.h
+
+/usr/local/include/gflags/gflags.h
+string
+-
+vector
+-
+gflags/gflags_declare.h
+/usr/local/include/gflags/gflags/gflags_declare.h
+gflags_gflags.h
+/usr/local/include/gflags/gflags_gflags.h
+
+/usr/local/include/gflags/gflags_declare.h
+string
+-
+stdint.h
+-
+sys/types.h
+-
+inttypes.h
+-
+
+/usr/local/include/gflags/gflags_gflags.h
 

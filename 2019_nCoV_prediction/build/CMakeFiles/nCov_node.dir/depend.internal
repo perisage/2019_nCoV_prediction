@@ -244,3 +244,6 @@ CMakeFiles/nCov_node.dir/src/main.cpp.o
  /usr/local/include/g2o/stuff/property.h
  /usr/local/include/g2o/stuff/string_tools.h
  /usr/local/include/g2o/stuff/timeutil.h
+ /usr/local/include/gflags/gflags.h
+ /usr/local/include/gflags/gflags_declare.h
+ /usr/local/include/gflags/gflags_gflags.h
