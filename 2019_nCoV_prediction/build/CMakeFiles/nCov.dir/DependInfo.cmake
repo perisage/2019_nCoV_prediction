@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/src/nCoV.cpp" "/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build/CMakeFiles/nCov.dir/src/nCoV.cpp.o"
+  "/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp" "/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build/CMakeFiles/nCov.dir/src/nCoV.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

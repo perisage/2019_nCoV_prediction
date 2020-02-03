@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -O3 -O3 -DNDEBUG
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/usr/local/include/g2o -I/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/include 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/usr/local/include/g2o -I/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/include 
 

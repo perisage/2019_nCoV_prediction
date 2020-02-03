@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction
+CMAKE_SOURCE_DIR = /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build
+CMAKE_BINARY_DIR = /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/nCov.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/nCov.dir/flags.make
 
 CMakeFiles/nCov.dir/src/nCoV.cpp.o: CMakeFiles/nCov.dir/flags.make
 CMakeFiles/nCov.dir/src/nCoV.cpp.o: ../src/nCoV.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nCov.dir/src/nCoV.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nCov.dir/src/nCoV.cpp.o -c /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/src/nCoV.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nCov.dir/src/nCoV.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nCov.dir/src/nCoV.cpp.o -c /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp
 
 CMakeFiles/nCov.dir/src/nCoV.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nCov.dir/src/nCoV.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/src/nCoV.cpp > CMakeFiles/nCov.dir/src/nCoV.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp > CMakeFiles/nCov.dir/src/nCoV.cpp.i
 
 CMakeFiles/nCov.dir/src/nCoV.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nCov.dir/src/nCoV.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/src/nCoV.cpp -o CMakeFiles/nCov.dir/src/nCoV.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp -o CMakeFiles/nCov.dir/src/nCoV.cpp.s
 
 CMakeFiles/nCov.dir/src/nCoV.cpp.o.requires:
 
@@ -91,7 +91,7 @@ nCov_EXTERNAL_OBJECTS =
 libnCov.a: CMakeFiles/nCov.dir/src/nCoV.cpp.o
 libnCov.a: CMakeFiles/nCov.dir/build.make
 libnCov.a: CMakeFiles/nCov.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libnCov.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libnCov.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/nCov.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nCov.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/nCov.dir/clean:
 .PHONY : CMakeFiles/nCov.dir/clean
 
 CMakeFiles/nCov.dir/depend:
-	cd /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build/CMakeFiles/nCov.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build/CMakeFiles/nCov.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/nCov.dir/depend
 

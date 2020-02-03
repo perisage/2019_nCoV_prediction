@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction
+# Install script for directory: /home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zhangzhihong/zhihong_dev_ws/cplusplus_dev_ws/2019_nCoV_prediction/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zhangzhihong/Downloads/2019_nCoV_prediction/2019_nCoV_prediction/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
