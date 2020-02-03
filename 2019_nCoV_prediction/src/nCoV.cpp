@@ -94,23 +94,22 @@ void nCoV::optimize()
 void nCoV::predict(int predictDays)
 {
 
-    time_t currentTime = time(0); // 获取当前日期
-    std::stringstream strTime;    // 用以将日期转为字符串
-    LOG_INFO << "  date\t\tinfected";
+    time_t currentTime = time(0);     // 获取当前日期
+    std::stringstream strTime;        // 用以将日期转为字符串
+    LOG_INFO << "  date\t\tinfected"; // 表格标题
     // 输出已有数据
-    currentTime -= 86400 * _dataSize;
-    LOG_INFO << "----------------------------------optimization-------------------------------------------";
+    currentTime -= 86400 * _dataSize; // 日期调整到第一天
+    LOG_INFO << "-----optimization-----";
     for (size_t i = 0; i < _dataSize; ++i)
     {
         currentTime += 86400;                                             // 日期增加一天
         strTime.str("");                                                  // 清空stringstream
         strTime << std::put_time(std::localtime(&currentTime), "%Y%m%d"); // 设置日期格式
-        int infected = static_cast<int>(_parameterEstimated[0] * _parameterEstimated[1] / (_parameterEstimated[1] + (_parameterEstimated[0] - _parameterEstimated[1]) * exp(-_parameterEstimated[2] * (i))) + 0.5);
-        LOG_INFO << strTime.str() << "\t" << infected;
+        LOG_INFO << strTime.str() << "\t" << _yData[i];
     }
-    LOG_INFO << "----------------------------------prediction-------------------------------------------";
+    LOG_INFO << "-----prediction-----";
     currentTime = time(0); // 重置为当前日期
-    for (size_t i = 0; i < predictDays; i++)
+    for (size_t i = 0; i < predictDays; ++i)
     {
         currentTime += 86400;                                             // 日期增加一天
         strTime.str("");                                                  // 清空stringstream
