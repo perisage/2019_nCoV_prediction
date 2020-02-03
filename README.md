@@ -4,7 +4,7 @@
 2019_nCoV 每日感染人数预测
 
 ## 软件依赖
-G2O GLOG(含youibot log system) GFLAGS
+用到的C++相关库: G2O GLOG(含youibot log system) GFLAGS    
 用到的python功能包: math matplotlib 
 
 ## 注意事项
