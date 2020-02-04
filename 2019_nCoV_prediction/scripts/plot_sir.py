@@ -22,7 +22,7 @@ for a, b in zip(x, y):
     if a <= 14:
         plt.text(a, b, ("01"+str(a+17), b),
                  ha='center', va='bottom', fontsize=10)
-    else:
+    else:  # 此处考虑将预测的部分用红色显示
         plt.text(a, b, ("02_"+str(a-14), b),
                  ha='center', va='bottom', fontsize=10)
 

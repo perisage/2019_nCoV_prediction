@@ -27,14 +27,14 @@
 class nCoV
 {
 private:
-    int _dataSize;           // 数据量，每天1条数据，即为天数
-    std::ifstream _dataFile; // 数据文件
+    int _dataSize;              // 数据量，每天1条数据，即为天数
+    std::ifstream _dataFile;    // 数据文件
+    std::vector<double> _xData; // 优化模型的自变量，为每日日期
+    std::vector<double> _yData; // 优化模型的因变量，为每日累计感染人数
 
     double _parameter[3];                // 待优化的SIR模型参数的初值
     Eigen::Vector3d _parameterEstimated; // 优化后的SIR模型参数值
 
-    std::vector<double> _xData; // 优化模型的自变量，为每日日期
-    std::vector<double> _yData; // 优化模型的因变量，为每日累计感染人数
 public:
     nCoV();
     void optimize();               // 模型优化

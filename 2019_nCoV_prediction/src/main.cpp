@@ -15,7 +15,6 @@ int main(int argc, char **argv)
     Glogger logger("2019_nCoV_prediction"); // 初始化日志系统
     // 解析gflags 参数
     gflags::ParseCommandLineFlags(&argc, &argv, true);
-
     LOG_HINT(LOG_GREEN) << "get predictDays: " << FLAGS_d;
 
     nCoV ncov;

@@ -1,11 +1,11 @@
 #include "nCoV.h"
 
 nCoV::nCoV()
-    : _dataFile("../data/data.txt") // 数据文件
+    : _dataFile("../data/data.txt")          // 数据文件
+      ,                                      // 待优化的变量，依次为SIR模型中的 S0(易感人群), I0(感染人群), γβ(传染期接触数)
+      _parameter{100000.0, 58.0, 0.02123106} // 初始参数值 I0从2020.01.17开始算起，一方面从17日开始有明显增长，另一方面缺少16日的数据
       ,
-      _parameter{100000.0, 58.0, 0.02123106} // 初始参数值
-      ,
-      _parameterEstimated{0.0, 0.0, 0.0} // 优化后的参数值
+      _parameterEstimated{0.0, 0.0, 0.0} // 优化后的参数值初值
 {
     if (!_dataFile.is_open())
     {
@@ -53,9 +53,6 @@ void nCoV::optimize()
     optimizer.setAlgorithm(solver); //设置求解器
     optimizer.setVerbose(false);    //关闭输出调试
 
-    // 待优化的变量，依次为SIR模型中的 S0(易感人群), I0(感染人群), γβ(传染期接触数)
-    // double parameter[3] = {100000.0, 58.0, 0.02123106}; // I0从2020.01.17开始算起，一方面从17日开始有明显增长，另一方面缺少16日的数据
-
     // 图模型中有一个节点，边的个数为从2020.01.17到当前天的天数
     // 向图中添加顶点
     CurveFittingVertex *vertex = new CurveFittingVertex();
@@ -86,15 +83,14 @@ void nCoV::optimize()
     LOG_INFO << "estimated matrix: " << _parameterEstimated.transpose();
     LOG_INFO << "estimated SIR model: y=" << _parameterEstimated[0] << "*" << _parameterEstimated[1] << "/(" << _parameterEstimated[1] << "+(" << _parameterEstimated[0] << "-" << _parameterEstimated[1] << ")e^(-" << _parameterEstimated[2] << "x))";
 
-    std::ofstream parameterFile("../data/parameter.txt"); // 数据文件
+    std::ofstream parameterFile("../data/parameter.txt"); // 模型参数文件
     if (!parameterFile.is_open())
     {
-        LOG_FATAL << "write parameter file failed and program exit!";
+        LOG_FATAL << "write parameter to file failed and program exit!";
     }
-
     parameterFile << _parameterEstimated[0] << " " << _parameterEstimated[1] << " " << _parameterEstimated[2];
     parameterFile.close();
-    LOG_INFO << "load data file successfully!";
+    LOG_INFO << "write parameter to file successfully!";
 }
 
 //! 感染人数预测
