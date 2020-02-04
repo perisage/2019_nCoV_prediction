@@ -1,3 +1,16 @@
+/*
+ * @Author       : PeripateticWind
+ * @Email        : PeripateticWind@gmail.com
+ * @Company      : Xi'an Jiaotong University
+ * @CreateTime   : 2020-02-03 16:29:46
+ * @Description  : main Node for nCoV prediction
+ * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/main.cpp
+ * @LastEditors  : PeripateticWind
+ * @LastEditTime : 2020-02-04 21:54:36
+ * @youwant      : add what you want
+ * @Copyright (c) 2020, PeripateticWind. All rights reserved.
+ */
+
 // GFLAGS
 #include <gflags/gflags.h>
 // USER

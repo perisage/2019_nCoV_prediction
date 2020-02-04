@@ -1,3 +1,15 @@
+/*
+ * @Author       : PeripateticWind
+ * @Email        : PeripateticWind@gmail.com
+ * @Company      : Xi'an Jiaotong University
+ * @CreateTime   : 2020-02-03 16:29:46
+ * @Description  : the declaration of clas nCoV
+ * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/include/nCoV.h
+ * @LastEditors  : PeripateticWind
+ * @LastEditTime : 2020-02-04 21:54:57
+ * @youwant      : add what you want
+ * @Copyright (c) 2020, PeripateticWind. All rights reserved.
+ */
 #pragma once
 // STL
 #include <algorithm>

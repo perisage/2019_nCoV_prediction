@@ -1,5 +1,18 @@
-# !/usr/bin/python
-# coding:utf-8
+#!/usr/bin/env python
+# coding=utf-8
+'''
+@Author       : PeripateticWind
+@Email        : PeripateticWind@gmail.com
+@Company      : Xi'an Jiaotong University
+@CreateTime   : 2020-02-03 21:03:40
+@Description  : scripts to draw SIR model
+@FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/scripts/plot_sir.py
+@LastEditors  : PeripateticWind
+@LastEditTime : 2020-02-04 21:53:31
+@youwant      : add what you want
+@Copyright (c) 2020, PeripateticWind. All rights reserved.
+'''
+
 
 import math
 import matplotlib.pyplot as plt

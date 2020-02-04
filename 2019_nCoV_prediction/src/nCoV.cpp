@@ -1,3 +1,15 @@
+/*
+ * @Author       : PeripateticWind
+ * @Email        : PeripateticWind@gmail.com
+ * @Company      : Xi'an Jiaotong University
+ * @CreateTime   : 2020-02-03 16:29:46
+ * @Description  : the implementation of clas nCoV
+ * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp
+ * @LastEditors  : PeripateticWind
+ * @LastEditTime : 2020-02-04 21:51:30
+ * @youwant      : add what you want
+ * @Copyright (c) 2020, PeripateticWind. All rights reserved.
+ */
 #include "nCoV.h"
 
 nCoV::nCoV()
