@@ -3,13 +3,14 @@
  * @Email        : PeripateticWind@gmail.com
  * @Company      : Xi'an Jiaotong University
  * @CreateTime   : 2020-02-03 16:29:46
- * @Description  : G2O edge definition
+ * @Description  : 
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/include/curve_fitting_edge.h
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-04 21:54:17
+ * @LastEditTime : 2020-02-04 22:05:22
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
+
 #pragma once
 // STL
 #include <iostream>
@@ -27,9 +28,18 @@ class CurveFittingEdge : public g2o::BaseUnaryEdge<1, double, CurveFittingVertex
 {
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+
+    /**
+     * @brief Construct a new Curve Fitting Edge object
+     * 
+     * @param x 模型自变量x
+     */
     CurveFittingEdge(double x) : BaseUnaryEdge(), _x(x) {}
 
-    // 计算曲线模型误差
+    /**
+     * @brief 计算曲线模型误差
+     * 
+     */
     virtual void computeError() override // 本函数提供误差计算模型
     {
         const CurveFittingVertex *vertex = static_cast<const CurveFittingVertex *>(_vertices[0]);                                                                                                              // 获取顶点

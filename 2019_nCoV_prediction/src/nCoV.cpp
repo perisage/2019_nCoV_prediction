@@ -6,12 +6,16 @@
  * @Description  : the implementation of clas nCoV
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-04 21:51:30
+ * @LastEditTime : 2020-02-04 22:06:30
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
 #include "nCoV.h"
 
+/**
+ * @brief Construct a new nCoV::nCoV object
+ * 
+ */
 nCoV::nCoV()
     : _dataFile("../data/data.txt")          // 数据文件
       ,                                      // 待优化的变量，依次为SIR模型中的 S0(易感人群), I0(感染人群), γβ(传染期接触数)

@@ -6,7 +6,7 @@
  * @Description  : G2O vertex definition
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/include/curve_fitting_vertex.h
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-04 21:53:44
+ * @LastEditTime : 2020-02-04 22:06:03
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
@@ -25,12 +25,22 @@ class CurveFittingVertex : public g2o::BaseVertex<3, Eigen::Vector3d>
 {
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+
+    /**
+     * @brief Set the To Origin Impl object
+     * 
+     */
     virtual void setToOriginImpl() override // 设置顶点的初始值
     {
         _estimate << 0, 0, 0; // estimate即为需要更新的顶点数据(此处为一个3维向量)
     }
 
-    virtual void oplusImpl(const double *update) override // 设置顶点的更新规则 update为更新量
+    /**
+     * @brief 设置顶点的更新规则 update为更新量
+     * 
+     * @param update 
+     */
+    virtual void oplusImpl(const double *update) override
     {
         _estimate += Eigen::Vector3d(update);
     }
