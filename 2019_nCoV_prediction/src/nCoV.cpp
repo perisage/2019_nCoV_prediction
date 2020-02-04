@@ -82,6 +82,9 @@ void nCoV::optimize()
     _parameterEstimated = vertex->estimate();
     LOG_INFO << "estimated matrix: " << _parameterEstimated.transpose();
     LOG_INFO << "estimated SIR model: y=" << _parameterEstimated[0] << "*" << _parameterEstimated[1] << "/(" << _parameterEstimated[1] << "+(" << _parameterEstimated[0] << "-" << _parameterEstimated[1] << ")e^(-" << _parameterEstimated[2] << "x))";
+    LOG_WARNING << "The 2019_nCoV SIR model S0 is " << static_cast<int>(_parameterEstimated[0]);
+    LOG_WARNING << "The SARS SIR model S0 is " << 5237.0;
+    LOG_WARNING << "2019_nCoV is " << LOG_RED << _parameterEstimated[0] / 5237.0 << LOG_YELLOW << " times of the SARS!";
 
     std::ofstream parameterFile("../data/parameter.txt"); // 模型参数文件
     if (!parameterFile.is_open())
