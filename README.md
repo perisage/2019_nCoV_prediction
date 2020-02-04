@@ -29,5 +29,11 @@ $ make
 
 通过-d命令指定预测天数运行示例：
 ```
-./nCov_node -d 3
+./nCov_node -d 50
 ```
+
+运行结果截图:     
+信息输出：     
+![avatar](./2019_nCoV_prediction/data/output1.png)       
+SIR模型图：      
+![avatar](./2019_nCoV_prediction/data/figure_1.png)      
