@@ -8,11 +8,10 @@
 @Description  : scripts to draw SIR model
 @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/scripts/plot_sir.py
 @LastEditors  : PeripateticWind
-@LastEditTime : 2020-02-04 21:53:31
+@LastEditTime : 2020-02-05 08:36:25
 @youwant      : add what you want
 @Copyright (c) 2020, PeripateticWind. All rights reserved.
 '''
-
 
 import math
 import matplotlib.pyplot as plt

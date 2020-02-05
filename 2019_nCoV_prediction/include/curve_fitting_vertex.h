@@ -10,6 +10,7 @@
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
+
 #pragma once
 
 // STL
@@ -28,23 +29,20 @@ public:
 
     /**
      * @brief Set the To Origin Impl object
-     * 
+     *
      */
-    virtual void setToOriginImpl() override // 设置顶点的初始值
+    virtual void setToOriginImpl() override  // 设置顶点的初始值
     {
-        _estimate << 0, 0, 0; // estimate即为需要更新的顶点数据(此处为一个3维向量)
+        _estimate << 0, 0, 0;  // estimate即为需要更新的顶点数据(此处为一个3维向量)
     }
 
     /**
      * @brief 设置顶点的更新规则 update为更新量
-     * 
-     * @param update 
+     *
+     * @param update
      */
-    virtual void oplusImpl(const double *update) override
-    {
-        _estimate += Eigen::Vector3d(update);
-    }
+    virtual void oplusImpl(const double* update) override { _estimate += Eigen::Vector3d(update); }
     // 存盘和读盘:留空
-    virtual bool read(std::istream &in) override {}
-    virtual bool write(std::ostream &out) const override {}
+    virtual bool read(std::istream& in) override {}
+    virtual bool write(std::ostream& out) const override {}
 };

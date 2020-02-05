@@ -6,10 +6,11 @@
  * @Description  : the declaration of clas nCoV
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/include/nCoV.h
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-04 21:54:57
+ * @LastEditTime : 2020-02-05 08:36:33
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
+
 #pragma once
 // STL
 #include <algorithm>
@@ -39,16 +40,16 @@
 class nCoV
 {
 private:
-    int _dataSize;              // 数据量，每天1条数据，即为天数
-    std::ifstream _dataFile;    // 数据文件
-    std::vector<double> _xData; // 优化模型的自变量，为每日日期
-    std::vector<double> _yData; // 优化模型的因变量，为每日累计感染人数
+    int                 _dataSize;  // 数据量，每天1条数据，即为天数
+    std::ifstream       _dataFile;  // 数据文件
+    std::vector<double> _xData;     // 优化模型的自变量，为每日日期
+    std::vector<double> _yData;     // 优化模型的因变量，为每日累计感染人数
 
-    double _parameter[3];                // 待优化的SIR模型参数的初值
-    Eigen::Vector3d _parameterEstimated; // 优化后的SIR模型参数值
+    double          _parameter[3];        // 待优化的SIR模型参数的初值
+    Eigen::Vector3d _parameterEstimated;  // 优化后的SIR模型参数值
 
 public:
     nCoV();
-    void optimize();               // 模型优化
-    void predict(int predictDays); // 模型预测
+    void optimize();                // 模型优化
+    void predict(int predictDays);  // 模型预测
 };
