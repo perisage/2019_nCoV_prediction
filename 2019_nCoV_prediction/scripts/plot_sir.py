@@ -8,7 +8,7 @@
 @Description  : scripts to draw SIR model
 @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/scripts/plot_sir.py
 @LastEditors  : PeripateticWind
-@LastEditTime : 2020-02-05 08:36:25
+@LastEditTime : 2020-02-06 09:21:26
 @youwant      : add what you want
 @Copyright (c) 2020, PeripateticWind. All rights reserved.
 '''
@@ -32,7 +32,7 @@ for i, iter in enumerate(x):
 plt.plot(x, y,  color='r', markerfacecolor='blue', marker='o')
 for a, b in zip(x, y):
     if a <= 14:
-        plt.text(a, b, ("01"+str(a+17), b),
+        plt.text(a, b, ("01_"+str(a+17), b),
                  ha='center', va='bottom', fontsize=10)
     else:  # 此处考虑将预测的部分用红色显示
         plt.text(a, b, ("02_"+str(a-14), b),

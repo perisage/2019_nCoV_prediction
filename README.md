@@ -1,3 +1,15 @@
+<!--
+ * @Author       : PeripateticWind
+ * @Email        : PeripateticWind@gmail.com
+ * @Company      : Xi'an Jiaotong University
+ * @CreateTime   : 2020-02-03 16:29:37
+ * @Description  : 
+ * @FilePath     : /2019_nCoV_prediction/README.md
+ * @LastEditors  : PeripateticWind
+ * @LastEditTime : 2020-02-06 09:32:15
+ * @youwant      : add what you want
+ * @Copyright (c) 2020, PeripateticWind. All rights reserved.
+ -->
 # 2019_nCoV_prediction
 
 ## 介绍
@@ -34,6 +46,6 @@ $ make
 
 运行结果截图:     
 信息输出：     
-![avatar](./2019_nCoV_prediction/data/output1.png)       
+![avatar](./2019_nCoV_prediction/data/output_1.png)       
 SIR模型图：      
 ![avatar](./2019_nCoV_prediction/data/figure_1.png)      

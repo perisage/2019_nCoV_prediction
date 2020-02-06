@@ -19,12 +19,12 @@ include_directories(
 
 set(SRC_LIST src/main.cpp)
 
-add_library(nCov
+add_library(nCoV
             src/nCoV.cpp)
 
-add_executable(nCov_node ${SRC_LIST})
-target_link_libraries(nCov_node 
-    nCov
+add_executable(nCoV_node ${SRC_LIST})
+target_link_libraries(nCoV_node 
+    nCoV
     ${CERES_LIBRARIES} 
     g2o_core
     g2o_stuff

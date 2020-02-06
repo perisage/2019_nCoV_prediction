@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named nCov_node
+# Target rules for targets named nCoV_node
 
 # Build rule for target.
-nCov_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nCov_node
-.PHONY : nCov_node
+nCoV_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nCoV_node
+.PHONY : nCoV_node
 
 # fast build rule for target.
-nCov_node/fast:
-	$(MAKE) -f CMakeFiles/nCov_node.dir/build.make CMakeFiles/nCov_node.dir/build
-.PHONY : nCov_node/fast
+nCoV_node/fast:
+	$(MAKE) -f CMakeFiles/nCoV_node.dir/build.make CMakeFiles/nCoV_node.dir/build
+.PHONY : nCoV_node/fast
 
 #=============================================================================
-# Target rules for targets named nCov
+# Target rules for targets named nCoV
 
 # Build rule for target.
-nCov: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nCov
-.PHONY : nCov
+nCoV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nCoV
+.PHONY : nCoV
 
 # fast build rule for target.
-nCov/fast:
-	$(MAKE) -f CMakeFiles/nCov.dir/build.make CMakeFiles/nCov.dir/build
-.PHONY : nCov/fast
+nCoV/fast:
+	$(MAKE) -f CMakeFiles/nCoV.dir/build.make CMakeFiles/nCoV.dir/build
+.PHONY : nCoV/fast
 
 src/main.o: src/main.cpp.o
 
@@ -142,7 +142,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/nCov_node.dir/build.make CMakeFiles/nCov_node.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/nCoV_node.dir/build.make CMakeFiles/nCoV_node.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -151,7 +151,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/nCov_node.dir/build.make CMakeFiles/nCov_node.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/nCoV_node.dir/build.make CMakeFiles/nCoV_node.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -160,7 +160,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/nCov_node.dir/build.make CMakeFiles/nCov_node.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/nCoV_node.dir/build.make CMakeFiles/nCoV_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/nCoV.o: src/nCoV.cpp.o
@@ -169,7 +169,7 @@ src/nCoV.o: src/nCoV.cpp.o
 
 # target to build an object file
 src/nCoV.cpp.o:
-	$(MAKE) -f CMakeFiles/nCov.dir/build.make CMakeFiles/nCov.dir/src/nCoV.cpp.o
+	$(MAKE) -f CMakeFiles/nCoV.dir/build.make CMakeFiles/nCoV.dir/src/nCoV.cpp.o
 .PHONY : src/nCoV.cpp.o
 
 src/nCoV.i: src/nCoV.cpp.i
@@ -178,7 +178,7 @@ src/nCoV.i: src/nCoV.cpp.i
 
 # target to preprocess a source file
 src/nCoV.cpp.i:
-	$(MAKE) -f CMakeFiles/nCov.dir/build.make CMakeFiles/nCov.dir/src/nCoV.cpp.i
+	$(MAKE) -f CMakeFiles/nCoV.dir/build.make CMakeFiles/nCoV.dir/src/nCoV.cpp.i
 .PHONY : src/nCoV.cpp.i
 
 src/nCoV.s: src/nCoV.cpp.s
@@ -187,7 +187,7 @@ src/nCoV.s: src/nCoV.cpp.s
 
 # target to generate assembly for a file
 src/nCoV.cpp.s:
-	$(MAKE) -f CMakeFiles/nCov.dir/build.make CMakeFiles/nCov.dir/src/nCoV.cpp.s
+	$(MAKE) -f CMakeFiles/nCoV.dir/build.make CMakeFiles/nCoV.dir/src/nCoV.cpp.s
 .PHONY : src/nCoV.cpp.s
 
 # Help Target
@@ -198,8 +198,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... nCov_node"
-	@echo "... nCov"
+	@echo "... nCoV_node"
+	@echo "... nCoV"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

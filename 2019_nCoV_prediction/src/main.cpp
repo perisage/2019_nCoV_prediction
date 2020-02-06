@@ -3,15 +3,15 @@
  * @Email        : PeripateticWind@gmail.com
  * @Company      : Xi'an Jiaotong University
  * @CreateTime   : 2020-02-03 16:29:46
- * @Description  : main Node for nCoV prediction
+ * @Description  : the nCoV prediction program main node file
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/main.cpp
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-05 14:22:34
+ * @LastEditTime : 2020-02-06 09:17:26
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
 
-// GFLAGS
+// GOOGLE
 #include <gflags/gflags.h>
 
 // USER
@@ -27,15 +27,15 @@ DEFINE_int32(d, 5, "the days to predict");  // 要预测的天数
 int main(int argc, char** argv)
 {
     Glogger logger("2019_nCoV_prediction");  // 初始化日志系统
-    // 解析gflags 参数
+
+    // 解析gflags  参数
     gflags::ParseCommandLineFlags(&argc, &argv, true);
     LOG_HINT(LOG_GREEN) << "get predictDays: " << FLAGS_d;
 
-    nCoV ncov;
-    ncov.optimize();        // 模型优化
-    ncov.predict(FLAGS_d);  // 感染人数预测
+    nCoV ncov(FLAGS_d);  // 模型优化与预测
 
     // 调用python脚本绘制曲线
     const char* cmd = "python ../scripts/plot_sir.py";
+    LOG_INFO << "python:";
     return system(cmd);
 }

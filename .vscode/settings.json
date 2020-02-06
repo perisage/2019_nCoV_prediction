@@ -52,5 +52,9 @@
         "utility": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && cd ../build && cmake .. && make && ls && ./nCoV_node && cd ..",
+    },
+
 }

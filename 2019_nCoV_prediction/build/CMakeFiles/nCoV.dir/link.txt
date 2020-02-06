@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnCoV.a  CMakeFiles/nCoV.dir/src/nCoV.cpp.o
+/usr/bin/ranlib libnCoV.a

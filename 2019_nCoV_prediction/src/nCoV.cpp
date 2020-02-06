@@ -6,7 +6,7 @@
  * @Description  : the implementation of clas nCoV
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-05 12:31:38
+ * @LastEditTime : 2020-02-05 19:06:49
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
@@ -16,9 +16,11 @@
 /**
  * @brief Construct a new nCoV::nCoV object
  *
+ * @param predictDays the days you want to predict
  */
-nCoV::nCoV()
-    : _dataFile("../data/data.txt")  // 数据文件
+nCoV::nCoV(int predictDays)
+    : _predictDays(predictDays)      // 要预测的天数
+    , _dataFile("../data/data.txt")  // 数据文件
     , _parameter{ 100000.0, 58.0, 0.02123106 }  // 待优化的变量，依次为SIR模型中的 S0(易感人群), I0(感染人群), γβ(传染期接触数),初始参数值 I0从2020.01.17开始算起，一方面从17日开始有明显增长，另一方面缺少16日的数据
     , _parameterEstimated{ 0.0, 0.0, 0.0 }  // 优化后的参数值初值
 {
@@ -44,12 +46,21 @@ nCoV::nCoV()
     std::for_each(_xData.begin(), _xData.end(), [&](const double d) { DLOG_INFO << d << " "; });
     DLOG_INFO << "_y:";
     std::for_each(_yData.begin(), _yData.end(), [&](const double d) { DLOG_INFO << d << " "; });
+
+    optimize();  // 模型优化
+    predict();   // 模型预测
 }
 
 //! 模型优化
 /*!
  * @brief G2O图模型优化
  **/
+
+/**
+ * @description:
+ * @param {type}
+ * @return:
+ */
 void nCoV::optimize()
 {
     // solver
@@ -114,9 +125,9 @@ void nCoV::optimize()
 //! 感染人数预测
 /*!
  * @brief 根据优化的图模型，预测指定天数每天的感染人数
- * @param input predictDays 待预测的天数
+ *
  **/
-void nCoV::predict(int predictDays)
+void nCoV::predict()
 {
     time_t            currentTime = time(0);  // 获取当前日期
     std::stringstream strTime;                // 用以将日期转为字符串
@@ -133,7 +144,7 @@ void nCoV::predict(int predictDays)
     }
     LOG_INFO << "-----prediction-----";
     currentTime = time(0);  // 重置为当前日期
-    for (size_t i = 0; i < predictDays; ++i)
+    for (size_t i = 0; i < _predictDays; ++i)
     {
         currentTime += 86400;                                              // 日期增加一天
         strTime.str("");                                                   // 清空stringstream
