@@ -6,7 +6,7 @@
  * @Description  : the nCoV prediction program main node file
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/main.cpp
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-06 09:17:26
+ * @LastEditTime : 2020-02-06 09:53:12
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
@@ -36,6 +36,5 @@ int main(int argc, char** argv)
 
     // 调用python脚本绘制曲线
     const char* cmd = "python ../scripts/plot_sir.py";
-    LOG_INFO << "python:";
     return system(cmd);
 }
