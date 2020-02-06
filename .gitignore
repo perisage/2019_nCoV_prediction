@@ -31,5 +31,5 @@
 *.out
 *.app
 
-./2019_nCoV_prediction/build/
+2019_nCoV_prediction/build/
 .vscode/
