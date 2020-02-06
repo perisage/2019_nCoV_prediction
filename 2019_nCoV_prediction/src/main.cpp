@@ -6,7 +6,7 @@
  * @Description  : the nCoV prediction program main node file
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/main.cpp
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-06 09:53:12
+ * @LastEditTime : 2020-02-06 10:01:58
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
@@ -26,6 +26,7 @@ DEFINE_int32(d, 5, "the days to predict");  // 要预测的天数
 
 int main(int argc, char** argv)
 {
+
     Glogger logger("2019_nCoV_prediction");  // 初始化日志系统
 
     // 解析gflags  参数
