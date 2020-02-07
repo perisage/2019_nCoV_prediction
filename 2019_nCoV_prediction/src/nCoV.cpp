@@ -1,12 +1,12 @@
 /*
  * @Author       : PeripateticWind
- * @Email        : PeripateticWind@gmail.com
+ * @Email        : zhangzhihong@stu.xjtu.edu.cn
  * @Company      : Xi'an Jiaotong University
  * @CreateTime   : 2020-02-03 16:29:46
- * @Description  : the implementation of clas nCoV
+ * @Description  : the nCoV class implementation file
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-05 19:06:49
+ * @LastEditTime : 2020-02-07 09:28:21
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */
@@ -55,12 +55,6 @@ nCoV::nCoV(int predictDays)
 /*!
  * @brief G2O图模型优化
  **/
-
-/**
- * @description:
- * @param {type}
- * @return:
- */
 void nCoV::optimize()
 {
     // solver

@@ -1,12 +1,12 @@
 /*
  * @Author       : PeripateticWind
- * @Email        : PeripateticWind@gmail.com
+ * @Email        : zhangzhihong@stu.xjtu.edu.cn
  * @Company      : Xi'an Jiaotong University
  * @CreateTime   : 2020-02-03 16:29:46
- * @Description  : the declaration of clas nCoV
+ * @Description  : the nCoV class declaration file
  * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/include/nCoV.h
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-05 22:09:17
+ * @LastEditTime : 2020-02-07 08:41:20
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  */

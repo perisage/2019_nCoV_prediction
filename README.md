@@ -3,10 +3,10 @@
  * @Email        : PeripateticWind@gmail.com
  * @Company      : Xi'an Jiaotong University
  * @CreateTime   : 2020-02-03 16:29:37
- * @Description  : 
+ * @Description  : The readme file of program
  * @FilePath     : /2019_nCoV_prediction/README.md
  * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-06 09:32:15
+ * @LastEditTime : 2020-02-07 09:43:05
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  -->
@@ -20,7 +20,8 @@
 用到的python功能包: math matplotlib 
 
 ## 注意事项
-计算机上需要预先安装G2O 
+1. 计算机上需要预先安装G2O。    
+2. 日志系统使用的是公司的日志系统，暂不开源，请谅解。如果要在自己的计算机上运行，可将代码中的日志替换为C++标准输出```std::cout<<```,并取消main中Glogger对象的定义即可。          
 
 ## 安装教程
 ```
@@ -36,12 +37,12 @@ $ make
 
 采用默认的预测天数(5天)运行示例：
 ```
-./nCov_node
+./nCoV_node
 ```
 
 通过-d命令指定预测天数运行示例：
 ```
-./nCov_node -d 50
+./nCoV_node -d 50
 ```
 
 运行结果截图:     
