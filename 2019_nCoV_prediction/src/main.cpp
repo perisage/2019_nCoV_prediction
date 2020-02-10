@@ -1,17 +1,25 @@
-/*
- * @Author       : PeripateticWind
- * @Email        : zhangzhihong@stu.xjtu.edu.cn
- * @Company      : Xi'an Jiaotong University
- * @CreateTime   : 2020-02-03 16:29:46
- * @Description  : the 2019_nCoV prediction program main node
- * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/main.cpp
- * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-07 19:22:44
- * @youwant      : add what you want
- * @Copyright (c) 2020, PeripateticWind. All rights reserved.
- */
+/**
+ * @file main.cpp
+ * @author PeripateticWind (zhangzhihong@stu.xjtu.edu.cn)
+ * @brief  the 2019_nCoV prediction program main node
+ * @version 1.0.0
+ * @date 2020-02-10 22:42:35
+ * @lasteditor PeripateticWind
+ * @lastedittime 2020-02-10 22:42:35
+ * @email zhangzhihong@stu.xjtu.edu.cn
+ * @company Xi'an Jiaotong University
+ * @copyright Copyright (c) 2020 PeripateticWind.   All rights reserved.
+ * @license Licensed under the MIT License.
+ * @par Changelog
+ * <table>
+ * <caption>Change Log</caption>
+ * <tr><th>Date       <th>Version <th>Author  <th>Description
+ * <tr><td>2020-02-10 22:42:35 <td>1.0.0     <td>PeripateticWind     <td>change log
+ * </table>
+ *
+ **/
 
-// GOOGLE
+// GOOGLE GFLAGS
 #include <gflags/gflags.h>
 
 // USER
@@ -27,7 +35,6 @@ DEFINE_int32(d, 5, "the days to predict");  // 要预测的天数
 int main(int argc, char** argv)
 {
     Glogger logger("2019_nCoV_prediction");  // 初始化日志系统
-
     // 解析gflags  参数
     gflags::ParseCommandLineFlags(&argc, &argv, true);
     LOG_HINT(LOG_GREEN) << "get predictDays: " << FLAGS_d;

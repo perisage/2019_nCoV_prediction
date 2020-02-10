@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">gflags/gflags.h</includes>
+    <includes refid="nCoV_8h" local="yes">nCoV.h</includes>
+    <incdepgraph>
+      <node id="131">
+        <label>g2o/core/block_solver.h</label>
+      </node>
+      <node id="126">
+        <label>cmath</label>
+      </node>
+      <node id="136">
+        <label>glog/log.h</label>
+      </node>
+      <node id="130">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="121">
+        <label>src/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>fstream</label>
+      </node>
+      <node id="122">
+        <label>gflags/gflags.h</label>
+      </node>
+      <node id="140">
+        <label>g2o/core/base_vertex.h</label>
+      </node>
+      <node id="123">
+        <label>nCoV.h</label>
+        <link refid="nCoV_8h"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>ctime</label>
+      </node>
+      <node id="134">
+        <label>g2o/core/optimization_algorithm_levenberg.h</label>
+      </node>
+      <node id="138">
+        <label>g2o/core/base_unary_edge.h</label>
+      </node>
+      <node id="137">
+        <label>curve_fitting_edge.h</label>
+        <link refid="curve__fitting__edge_8h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>g2o/solvers/dense/linear_solver_dense.h</label>
+      </node>
+      <node id="139">
+        <label>curve_fitting_vertex.h</label>
+        <link refid="curve__fitting__vertex_8h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>iostream</label>
+      </node>
+      <node id="133">
+        <label>g2o/core/optimization_algorithm_gauss_newton.h</label>
+      </node>
+      <node id="125">
+        <label>chrono</label>
+      </node>
+      <node id="132">
+        <label>g2o/core/optimization_algorithm_dogleg.h</label>
+      </node>
+      <node id="124">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1ac61515ae4926c5ffeb447645eee3ac56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DEFINE_int32</definition>
+        <argsstring>(d, 5,&quot;the days to predict&quot;)</argsstring>
+        <name>DEFINE_int32</name>
+        <param>
+          <type>d</type>
+        </param>
+        <param>
+          <type>5</type>
+        </param>
+        <param>
+          <type>&quot;the days to predict&quot;</type>
+        </param>
+        <briefdescription>
+<para>本程序用来预测每日感染人数 数据来源：http://m.medsci.cn/wh.asp </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main.cpp" line="35" column="1" bodyfile="src/main.cpp" bodystart="35" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>the 2019_nCoV prediction program main node </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>PeripateticWind (<ulink url="mailto:zhangzhihong@stu.xjtu.edu.cn">zhangzhihong@stu.xjtu.edu.cn</ulink>) </para></simplesect>
+<simplesect kind="version"><para>1.0.0 </para></simplesect>
+<simplesect kind="date"><para>2020-02-10 22:42:35 </para></simplesect>
+<simplesect kind="par"><title>LastEditor</title><para>PeripateticWind </para></simplesect>
+<simplesect kind="par"><title>LastEditTime</title><para>2020-02-10 22:42:35 </para></simplesect>
+<simplesect kind="par"><title>Email</title><para><ulink url="mailto:zhangzhihong@stu.xjtu.edu.cn">zhangzhihong@stu.xjtu.edu.cn</ulink> </para></simplesect>
+<simplesect kind="par"><title>Company</title><para>Xi&apos;an Jiaotong University </para></simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2020 PeripateticWind. All rights reserved. </para></simplesect>
+<simplesect kind="par"><title>License</title><para>Licensed under the MIT License. </para></simplesect>
+<simplesect kind="par"><title>Changelog</title><para><table rows="2" cols="4"><caption>Change Log</caption>
+<row>
+<entry thead="yes"><para>Date </para></entry><entry thead="yes"><para>Version </para></entry><entry thead="yes"><para>Author </para></entry><entry thead="yes"><para>Description </para></entry></row>
+<row>
+<entry thead="no"><para>2020-02-10 22:42:35 </para></entry><entry thead="no"><para>1.0.0 </para></entry><entry thead="no"><para>PeripateticWind </para></entry><entry thead="no"><para>change log </para></entry></row>
+</table>
+</para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="22"><highlight class="comment">//<sp/>GOOGLE<sp/>GFLAGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gflags/gflags.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>USER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nCoV_8h" kindref="compound">nCoV.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="main_8cpp_1ac61515ae4926c5ffeb447645eee3ac56" kindref="member">DEFINE_int32</ref>(d,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;the<sp/>days<sp/>to<sp/>predict&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>要预测的天数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>Glogger<sp/>logger(</highlight><highlight class="stringliteral">&quot;2019_nCoV_prediction&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>初始化日志系统</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>解析gflags<sp/><sp/>参数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>gflags::ParseCommandLineFlags(&amp;argc,<sp/>&amp;argv,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_HINT(LOG_GREEN)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;get<sp/>predictDays:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>FLAGS_d;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnCoV" kindref="compound">nCoV</ref><sp/>ncov(FLAGS_d);<sp/><sp/></highlight><highlight class="comment">//<sp/>模型优化与预测</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>此处应该在C++中直接将数据传递给脚本，而不是以system<sp/>command的形式去调用</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>调用python脚本绘制曲线</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>cmd<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;python<sp/>../scripts/plot_sir.py&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>system(cmd);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/main.cpp"/>
+  </compounddef>
+</doxygen>

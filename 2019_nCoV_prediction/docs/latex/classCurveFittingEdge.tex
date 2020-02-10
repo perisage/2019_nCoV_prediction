@@ -1,0 +1,98 @@
+\hypertarget{classCurveFittingEdge}{}\section{Curve\+Fitting\+Edge Class Reference}
+\label{classCurveFittingEdge}\index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
+
+
+{\ttfamily \#include $<$curve\+\_\+fitting\+\_\+edge.\+h$>$}
+
+
+
+Inheritance diagram for Curve\+Fitting\+Edge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classCurveFittingEdge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Curve\+Fitting\+Edge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classCurveFittingEdge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW \hyperlink{classCurveFittingEdge_a3a7ee01bc38a44a179faa78d78bcdc0b}{Curve\+Fitting\+Edge} (double x)
+\begin{DoxyCompactList}\small\item\em Construct a new Curve Fitting Edge object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCurveFittingEdge_a4497b29e2f168d877d7a858457b69fd1}{compute\+Error} () override
+\begin{DoxyCompactList}\small\item\em 计算曲线模型误差 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classCurveFittingEdge_a517490d29ac656c6a0fc100b1af7cd9f}{read} (std\+::istream \&in) override
+\item 
+virtual bool \hyperlink{classCurveFittingEdge_a70bde4a6cbed5fc825a069c6f1f45caa}{write} (std\+::ostream \&out) const override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}{\+\_\+x}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
+\index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
+\subsubsection[{\texorpdfstring{Curve\+Fitting\+Edge(double x)}{CurveFittingEdge(double x)}}]{\setlength{\rightskip}{0pt plus 5cm}E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW Curve\+Fitting\+Edge\+::\+Curve\+Fitting\+Edge (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCurveFittingEdge_a3a7ee01bc38a44a179faa78d78bcdc0b}{}\label{classCurveFittingEdge_a3a7ee01bc38a44a179faa78d78bcdc0b}
+
+
+Construct a new Curve Fitting Edge object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & 模型自变量x \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!compute\+Error@{compute\+Error}}
+\index{compute\+Error@{compute\+Error}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
+\subsubsection[{\texorpdfstring{compute\+Error() override}{computeError() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Curve\+Fitting\+Edge\+::compute\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCurveFittingEdge_a4497b29e2f168d877d7a858457b69fd1}{}\label{classCurveFittingEdge_a4497b29e2f168d877d7a858457b69fd1}
+
+
+计算曲线模型误差 
+
+\index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!read@{read}}
+\index{read@{read}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
+\subsubsection[{\texorpdfstring{read(std\+::istream \&in) override}{read(std::istream &in) override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Curve\+Fitting\+Edge\+::read (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCurveFittingEdge_a517490d29ac656c6a0fc100b1af7cd9f}{}\label{classCurveFittingEdge_a517490d29ac656c6a0fc100b1af7cd9f}
+\index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!write@{write}}
+\index{write@{write}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
+\subsubsection[{\texorpdfstring{write(std\+::ostream \&out) const override}{write(std::ostream &out) const override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Curve\+Fitting\+Edge\+::write (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCurveFittingEdge_a70bde4a6cbed5fc825a069c6f1f45caa}{}\label{classCurveFittingEdge_a70bde4a6cbed5fc825a069c6f1f45caa}
+
+
+\subsection{Member Data Documentation}
+\index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!\+\_\+x@{\+\_\+x}}
+\index{\+\_\+x@{\+\_\+x}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
+\subsubsection[{\texorpdfstring{\+\_\+x}{_x}}]{\setlength{\rightskip}{0pt plus 5cm}double Curve\+Fitting\+Edge\+::\+\_\+x}\hypertarget{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}{}\label{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{curve__fitting__edge_8h}{curve\+\_\+fitting\+\_\+edge.\+h}\end{DoxyCompactItemize}

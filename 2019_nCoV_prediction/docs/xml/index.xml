@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classCurveFittingEdge" kind="class"><name>CurveFittingEdge</name>
+    <member refid="classCurveFittingEdge_1ad0cf7b012c9e4585a6919b982f148449" kind="variable"><name>_x</name></member>
+    <member refid="classCurveFittingEdge_1a3a7ee01bc38a44a179faa78d78bcdc0b" kind="function"><name>CurveFittingEdge</name></member>
+    <member refid="classCurveFittingEdge_1a4497b29e2f168d877d7a858457b69fd1" kind="function"><name>computeError</name></member>
+    <member refid="classCurveFittingEdge_1a517490d29ac656c6a0fc100b1af7cd9f" kind="function"><name>read</name></member>
+    <member refid="classCurveFittingEdge_1a70bde4a6cbed5fc825a069c6f1f45caa" kind="function"><name>write</name></member>
+  </compound>
+  <compound refid="classCurveFittingVertex" kind="class"><name>CurveFittingVertex</name>
+    <member refid="classCurveFittingVertex_1a47ac379f177a871d1352c1c9dc64fa16" kind="function"><name>setToOriginImpl</name></member>
+    <member refid="classCurveFittingVertex_1a4e384a35c5f108f2ca7fbcad204c4df3" kind="function"><name>oplusImpl</name></member>
+    <member refid="classCurveFittingVertex_1aa96dd0a2d3d3bfe757484c912dd0f27b" kind="function"><name>read</name></member>
+    <member refid="classCurveFittingVertex_1aa1443355babb211e227422ea0675dc32" kind="function"><name>write</name></member>
+  </compound>
+  <compound refid="classnCoV" kind="class"><name>nCoV</name>
+    <member refid="classnCoV_1a7182f86ff0f0f607cd461ebe738fb9da" kind="variable"><name>_dataSize</name></member>
+    <member refid="classnCoV_1a71d73f9132ff05684bb8f830bd1f4232" kind="variable"><name>_predictDays</name></member>
+    <member refid="classnCoV_1a9585e58cac7c3c4cf26fe0291b809f06" kind="variable"><name>_dataFile</name></member>
+    <member refid="classnCoV_1a11802f3972f62a07b77b1847f1d010a8" kind="variable"><name>_xData</name></member>
+    <member refid="classnCoV_1a8e122688ffc8ee32df05f0cb6ef25920" kind="variable"><name>_yData</name></member>
+    <member refid="classnCoV_1ae34cb58fd08703599158b69853b659a2" kind="variable"><name>_parameter</name></member>
+    <member refid="classnCoV_1a6980bf4492a8ce437b15ac9625eacfce" kind="variable"><name>_parameterEstimated</name></member>
+    <member refid="classnCoV_1acf5ddd73cab8522622b2602258507c08" kind="function"><name>optimize</name></member>
+    <member refid="classnCoV_1a5a0b30d27da271601d45c144c6a3da2d" kind="function"><name>predict</name></member>
+    <member refid="classnCoV_1a30d4a90c5f401cf6943e104ec737dc48" kind="function"><name>nCoV</name></member>
+  </compound>
+  <compound refid="curve__fitting__edge_8h" kind="file"><name>curve_fitting_edge.h</name>
+  </compound>
+  <compound refid="curve__fitting__vertex_8h" kind="file"><name>curve_fitting_vertex.h</name>
+  </compound>
+  <compound refid="nCoV_8h" kind="file"><name>nCoV.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ac61515ae4926c5ffeb447645eee3ac56" kind="function"><name>DEFINE_int32</name></member>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="nCoV_8cpp" kind="file"><name>nCoV.cpp</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

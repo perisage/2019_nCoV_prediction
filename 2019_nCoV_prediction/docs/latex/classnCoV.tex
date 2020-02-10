@@ -1,0 +1,134 @@
+\hypertarget{classnCoV}{}\section{n\+CoV Class Reference}
+\label{classnCoV}\index{n\+CoV@{n\+CoV}}
+
+
+{\ttfamily \#include $<$n\+Co\+V.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{n\+CoV} (int predict\+Days)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{n\+Co\+V\+::n\+CoV} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classnCoV_acf5ddd73cab8522622b2602258507c08}{optimize} ()
+\begin{DoxyCompactList}\small\item\em G2\+O图模型优化 \end{DoxyCompactList}\item 
+void \hyperlink{classnCoV_a5a0b30d27da271601d45c144c6a3da2d}{predict} ()
+\begin{DoxyCompactList}\small\item\em 根据优化的图模型，预测指定天数每天的感染人数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classnCoV_a7182f86ff0f0f607cd461ebe738fb9da}{\+\_\+data\+Size}
+\begin{DoxyCompactList}\small\item\em 数据量，每天1条数据，即为天数 \end{DoxyCompactList}\item 
+int \hyperlink{classnCoV_a71d73f9132ff05684bb8f830bd1f4232}{\+\_\+predict\+Days}
+\begin{DoxyCompactList}\small\item\em 要预测的天数 \end{DoxyCompactList}\item 
+std\+::ifstream \hyperlink{classnCoV_a9585e58cac7c3c4cf26fe0291b809f06}{\+\_\+data\+File}
+\begin{DoxyCompactList}\small\item\em 数据文件 \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classnCoV_a11802f3972f62a07b77b1847f1d010a8}{\+\_\+x\+Data}
+\begin{DoxyCompactList}\small\item\em 优化模型的自变量，为每日日期 \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classnCoV_a8e122688ffc8ee32df05f0cb6ef25920}{\+\_\+y\+Data}
+\begin{DoxyCompactList}\small\item\em 优化模型的因变量，为每日累计感染人数 \end{DoxyCompactList}\item 
+double \hyperlink{classnCoV_ae34cb58fd08703599158b69853b659a2}{\+\_\+parameter} \mbox{[}3\mbox{]}
+\item 
+Eigen\+::\+Vector3d \hyperlink{classnCoV_a6980bf4492a8ce437b15ac9625eacfce}{\+\_\+parameter\+Estimated}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A test class.
+
+A more elaborate class description. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{n\+CoV@{n\+CoV}!n\+CoV@{n\+CoV}}
+\index{n\+CoV@{n\+CoV}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{n\+Co\+V(int predict\+Days)}{nCoV(int predictDays)}}]{\setlength{\rightskip}{0pt plus 5cm}n\+Co\+V\+::n\+CoV (
+\begin{DoxyParamCaption}
+\item[{int}]{predict\+Days}
+\end{DoxyParamCaption}
+)}\hypertarget{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{}\label{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}
+
+
+Construct a new \hyperlink{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{n\+Co\+V\+::n\+CoV} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predict\+Days} & the days you want to predict \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{n\+CoV@{n\+CoV}!optimize@{optimize}}
+\index{optimize@{optimize}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{optimize()}{optimize()}}]{\setlength{\rightskip}{0pt plus 5cm}void n\+Co\+V\+::optimize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_acf5ddd73cab8522622b2602258507c08}{}\label{classnCoV_acf5ddd73cab8522622b2602258507c08}
+
+
+G2\+O图模型优化 
+
+\index{n\+CoV@{n\+CoV}!predict@{predict}}
+\index{predict@{predict}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{predict()}{predict()}}]{\setlength{\rightskip}{0pt plus 5cm}void n\+Co\+V\+::predict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a5a0b30d27da271601d45c144c6a3da2d}{}\label{classnCoV_a5a0b30d27da271601d45c144c6a3da2d}
+
+
+根据优化的图模型，预测指定天数每天的感染人数 
+
+
+
+\subsection{Member Data Documentation}
+\index{n\+CoV@{n\+CoV}!\+\_\+data\+File@{\+\_\+data\+File}}
+\index{\+\_\+data\+File@{\+\_\+data\+File}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{\+\_\+data\+File}{_dataFile}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ifstream n\+Co\+V\+::\+\_\+data\+File\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a9585e58cac7c3c4cf26fe0291b809f06}{}\label{classnCoV_a9585e58cac7c3c4cf26fe0291b809f06}
+
+
+数据文件 
+
+\index{n\+CoV@{n\+CoV}!\+\_\+data\+Size@{\+\_\+data\+Size}}
+\index{\+\_\+data\+Size@{\+\_\+data\+Size}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{\+\_\+data\+Size}{_dataSize}}]{\setlength{\rightskip}{0pt plus 5cm}int n\+Co\+V\+::\+\_\+data\+Size\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a7182f86ff0f0f607cd461ebe738fb9da}{}\label{classnCoV_a7182f86ff0f0f607cd461ebe738fb9da}
+
+
+数据量，每天1条数据，即为天数 
+
+\index{n\+CoV@{n\+CoV}!\+\_\+parameter@{\+\_\+parameter}}
+\index{\+\_\+parameter@{\+\_\+parameter}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{\+\_\+parameter}{_parameter}}]{\setlength{\rightskip}{0pt plus 5cm}double n\+Co\+V\+::\+\_\+parameter\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_ae34cb58fd08703599158b69853b659a2}{}\label{classnCoV_ae34cb58fd08703599158b69853b659a2}
+\index{n\+CoV@{n\+CoV}!\+\_\+parameter\+Estimated@{\+\_\+parameter\+Estimated}}
+\index{\+\_\+parameter\+Estimated@{\+\_\+parameter\+Estimated}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{\+\_\+parameter\+Estimated}{_parameterEstimated}}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\+::\+Vector3d n\+Co\+V\+::\+\_\+parameter\+Estimated\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a6980bf4492a8ce437b15ac9625eacfce}{}\label{classnCoV_a6980bf4492a8ce437b15ac9625eacfce}
+\index{n\+CoV@{n\+CoV}!\+\_\+predict\+Days@{\+\_\+predict\+Days}}
+\index{\+\_\+predict\+Days@{\+\_\+predict\+Days}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{\+\_\+predict\+Days}{_predictDays}}]{\setlength{\rightskip}{0pt plus 5cm}int n\+Co\+V\+::\+\_\+predict\+Days\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a71d73f9132ff05684bb8f830bd1f4232}{}\label{classnCoV_a71d73f9132ff05684bb8f830bd1f4232}
+
+
+要预测的天数 
+
+\index{n\+CoV@{n\+CoV}!\+\_\+x\+Data@{\+\_\+x\+Data}}
+\index{\+\_\+x\+Data@{\+\_\+x\+Data}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{\+\_\+x\+Data}{_xData}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ n\+Co\+V\+::\+\_\+x\+Data\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a11802f3972f62a07b77b1847f1d010a8}{}\label{classnCoV_a11802f3972f62a07b77b1847f1d010a8}
+
+
+优化模型的自变量，为每日日期 
+
+\index{n\+CoV@{n\+CoV}!\+\_\+y\+Data@{\+\_\+y\+Data}}
+\index{\+\_\+y\+Data@{\+\_\+y\+Data}!n\+CoV@{n\+CoV}}
+\subsubsection[{\texorpdfstring{\+\_\+y\+Data}{_yData}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ n\+Co\+V\+::\+\_\+y\+Data\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a8e122688ffc8ee32df05f0cb6ef25920}{}\label{classnCoV_a8e122688ffc8ee32df05f0cb6ef25920}
+
+
+优化模型的因变量，为每日累计感染人数 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{nCoV_8h}{n\+Co\+V.\+h}\item 
+src/\hyperlink{nCoV_8cpp}{n\+Co\+V.\+cpp}\end{DoxyCompactItemize}

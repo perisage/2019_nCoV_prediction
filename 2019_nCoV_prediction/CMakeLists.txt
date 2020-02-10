@@ -1,3 +1,15 @@
+#####
+ # @Author       : PeripateticWind
+ # @Email        : zhangzhihong@stu.xjtu.edu.cn
+ # @Company      : Xi'an Jiaotong University
+ # @CreateTime   : 2020-02-03 16:29:46
+ # @Description  : 
+ # @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/CMakeLists.txt
+ # @LastEditors: PeripateticWind
+ # @LastEditTime: 2020-02-09 17:06:23
+ # @youwant      : add what you want
+ # @Copyright (c) 2020, PeripateticWind. All rights reserved.
+#####
 cmake_minimum_required(VERSION 3.5)
 project(2019_nCoV_prediction)
 
@@ -29,3 +41,8 @@ target_link_libraries(nCoV_node
     g2o_core
     g2o_stuff
     )
+
+
+# autogen docs
+include(docs/build_doxygen.cmake)
+autogen_docs()

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classCurveFittingEdge" kind="class" language="C++" prot="public">
+    <compoundname>CurveFittingEdge</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">g2o::BaseUnaryEdge&lt; 1, double, CurveFittingVertex &gt;</basecompoundref>
+    <includes refid="curve__fitting__edge_8h" local="no">curve_fitting_edge.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCurveFittingEdge_1ad0cf7b012c9e4585a6919b982f148449" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CurveFittingEdge::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_edge.h" line="68" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCurveFittingEdge_1a3a7ee01bc38a44a179faa78d78bcdc0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</type>
+        <definition>EIGEN_MAKE_ALIGNED_OPERATOR_NEW CurveFittingEdge::CurveFittingEdge</definition>
+        <argsstring>(double x)</argsstring>
+        <name>CurveFittingEdge</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Curve Fitting Edge object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>模型自变量x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_edge.h" line="45" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classCurveFittingEdge_1a4497b29e2f168d877d7a858457b69fd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CurveFittingEdge::computeError</definition>
+        <argsstring>() override</argsstring>
+        <name>computeError</name>
+        <briefdescription>
+<para>计算曲线模型误差 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_edge.h" line="55" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classCurveFittingEdge_1a517490d29ac656c6a0fc100b1af7cd9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool CurveFittingEdge::read</definition>
+        <argsstring>(std::istream &amp;in) override</argsstring>
+        <name>read</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_edge.h" line="64" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classCurveFittingEdge_1a70bde4a6cbed5fc825a069c6f1f45caa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool CurveFittingEdge::write</definition>
+        <argsstring>(std::ostream &amp;out) const override</argsstring>
+        <name>write</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_edge.h" line="65" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>g2o::BaseUnaryEdge&lt; 1, double, CurveFittingVertex &gt;</label>
+      </node>
+      <node id="10">
+        <label>CurveFittingEdge</label>
+        <link refid="classCurveFittingEdge"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>g2o::BaseUnaryEdge&lt; 1, double, CurveFittingVertex &gt;</label>
+      </node>
+      <node id="12">
+        <label>CurveFittingEdge</label>
+        <link refid="classCurveFittingEdge"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/curve_fitting_edge.h" line="36" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="35" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classCurveFittingEdge_1ad0cf7b012c9e4585a6919b982f148449" prot="public" virt="non-virtual"><scope>CurveFittingEdge</scope><name>_x</name></member>
+      <member refid="classCurveFittingEdge_1a4497b29e2f168d877d7a858457b69fd1" prot="public" virt="virtual"><scope>CurveFittingEdge</scope><name>computeError</name></member>
+      <member refid="classCurveFittingEdge_1a3a7ee01bc38a44a179faa78d78bcdc0b" prot="public" virt="non-virtual"><scope>CurveFittingEdge</scope><name>CurveFittingEdge</name></member>
+      <member refid="classCurveFittingEdge_1a517490d29ac656c6a0fc100b1af7cd9f" prot="public" virt="virtual"><scope>CurveFittingEdge</scope><name>read</name></member>
+      <member refid="classCurveFittingEdge_1a70bde4a6cbed5fc825a069c6f1f45caa" prot="public" virt="virtual"><scope>CurveFittingEdge</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

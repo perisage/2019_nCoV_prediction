@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classnCoV" kind="class" language="C++" prot="public">
+    <compoundname>nCoV</compoundname>
+    <includes refid="nCoV_8h" local="no">nCoV.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnCoV_1a7182f86ff0f0f607cd461ebe738fb9da" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nCoV::_dataSize</definition>
+        <argsstring></argsstring>
+        <name>_dataSize</name>
+        <briefdescription>
+<para>数据量，每天1条数据，即为天数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="63" column="1" bodyfile="include/nCoV.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnCoV_1a71d73f9132ff05684bb8f830bd1f4232" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nCoV::_predictDays</definition>
+        <argsstring></argsstring>
+        <name>_predictDays</name>
+        <briefdescription>
+<para>要预测的天数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="66" column="1" bodyfile="include/nCoV.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnCoV_1a9585e58cac7c3c4cf26fe0291b809f06" prot="private" static="no" mutable="no">
+        <type>std::ifstream</type>
+        <definition>std::ifstream nCoV::_dataFile</definition>
+        <argsstring></argsstring>
+        <name>_dataFile</name>
+        <briefdescription>
+<para>数据文件 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="69" column="1" bodyfile="include/nCoV.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnCoV_1a11802f3972f62a07b77b1847f1d010a8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; nCoV::_xData</definition>
+        <argsstring></argsstring>
+        <name>_xData</name>
+        <briefdescription>
+<para>优化模型的自变量，为每日日期 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="72" column="1" bodyfile="include/nCoV.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnCoV_1a8e122688ffc8ee32df05f0cb6ef25920" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; nCoV::_yData</definition>
+        <argsstring></argsstring>
+        <name>_yData</name>
+        <briefdescription>
+<para>优化模型的因变量，为每日累计感染人数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="75" column="1" bodyfile="include/nCoV.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnCoV_1ae34cb58fd08703599158b69853b659a2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double nCoV::_parameter[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>_parameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="77" column="1" bodyfile="include/nCoV.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnCoV_1a6980bf4492a8ce437b15ac9625eacfce" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d nCoV::_parameterEstimated</definition>
+        <argsstring></argsstring>
+        <name>_parameterEstimated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="78" column="1" bodyfile="include/nCoV.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnCoV_1acf5ddd73cab8522622b2602258507c08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nCoV::optimize</definition>
+        <argsstring>()</argsstring>
+        <name>optimize</name>
+        <briefdescription>
+<para>G2O图模型优化 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="80" column="1" bodyfile="src/nCoV.cpp" bodystart="72" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classnCoV_1a5a0b30d27da271601d45c144c6a3da2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nCoV::predict</definition>
+        <argsstring>()</argsstring>
+        <name>predict</name>
+        <briefdescription>
+<para>根据优化的图模型，预测指定天数每天的感染人数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="81" column="1" bodyfile="src/nCoV.cpp" bodystart="137" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnCoV_1a30d4a90c5f401cf6943e104ec737dc48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>nCoV::nCoV</definition>
+        <argsstring>(int predictDays)</argsstring>
+        <name>nCoV</name>
+        <param>
+          <type>int</type>
+          <declname>predictDays</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classnCoV_1a30d4a90c5f401cf6943e104ec737dc48" kindref="member">nCoV::nCoV</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>predictDays</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the days you want to predict </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/nCoV.h" line="83" column="1" bodyfile="src/nCoV.cpp" bodystart="30" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A test class.</para><para>A more elaborate class description. </para>    </detaileddescription>
+    <location file="include/nCoV.h" line="60" column="1" bodyfile="include/nCoV.h" bodystart="59" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classnCoV_1a9585e58cac7c3c4cf26fe0291b809f06" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_dataFile</name></member>
+      <member refid="classnCoV_1a7182f86ff0f0f607cd461ebe738fb9da" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_dataSize</name></member>
+      <member refid="classnCoV_1ae34cb58fd08703599158b69853b659a2" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_parameter</name></member>
+      <member refid="classnCoV_1a6980bf4492a8ce437b15ac9625eacfce" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_parameterEstimated</name></member>
+      <member refid="classnCoV_1a71d73f9132ff05684bb8f830bd1f4232" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_predictDays</name></member>
+      <member refid="classnCoV_1a11802f3972f62a07b77b1847f1d010a8" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_xData</name></member>
+      <member refid="classnCoV_1a8e122688ffc8ee32df05f0cb6ef25920" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_yData</name></member>
+      <member refid="classnCoV_1a30d4a90c5f401cf6943e104ec737dc48" prot="public" virt="non-virtual"><scope>nCoV</scope><name>nCoV</name></member>
+      <member refid="classnCoV_1acf5ddd73cab8522622b2602258507c08" prot="private" virt="non-virtual"><scope>nCoV</scope><name>optimize</name></member>
+      <member refid="classnCoV_1a5a0b30d27da271601d45c144c6a3da2d" prot="private" virt="non-virtual"><scope>nCoV</scope><name>predict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

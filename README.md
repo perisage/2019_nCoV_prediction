@@ -5,8 +5,8 @@
  * @CreateTime   : 2020-02-03 16:29:37
  * @Description  : The readme file of program
  * @FilePath     : /2019_nCoV_prediction/README.md
- * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-07 09:43:05
+ * @LastEditors            : PeripateticWind
+ * @LastEditTime           : 2020-02-10 13:16:32
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  -->
@@ -21,7 +21,7 @@
 
 ## 注意事项
 1. 计算机上需要预先安装G2O。    
-2. 日志系统使用的是公司的日志系统，暂不开源，请谅解。如果要在自己的计算机上运行，可将代码中的日志替换为C++标准输出```std::cout<<```,并取消main中Glogger对象的定义即可。          
+2. 日志系统使用的是公司的日志系统，暂不开源，请谅解。如果要在自己的计算机上运行，可将代码中的日志替换为C++标准输出`std::cout<<`,并取消main中Glogger对象的定义即可。          
 
 ## 安装教程
 ```

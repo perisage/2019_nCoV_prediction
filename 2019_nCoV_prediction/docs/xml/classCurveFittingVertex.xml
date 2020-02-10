@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classCurveFittingVertex" kind="class" language="C++" prot="public">
+    <compoundname>CurveFittingVertex</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">g2o::BaseVertex&lt; 3, Eigen::Vector3d &gt;</basecompoundref>
+    <includes refid="curve__fitting__vertex_8h" local="no">curve_fitting_vertex.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCurveFittingVertex_1a47ac379f177a871d1352c1c9dc64fa16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>EIGEN_MAKE_ALIGNED_OPERATOR_NEW void</type>
+        <definition>virtual EIGEN_MAKE_ALIGNED_OPERATOR_NEW void CurveFittingVertex::setToOriginImpl</definition>
+        <argsstring>() override</argsstring>
+        <name>setToOriginImpl</name>
+        <briefdescription>
+<para>Set the To Origin Impl object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_vertex.h" line="42" column="1" bodyfile="include/curve_fitting_vertex.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCurveFittingVertex_1a4e384a35c5f108f2ca7fbcad204c4df3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CurveFittingVertex::oplusImpl</definition>
+        <argsstring>(const double *update) override</argsstring>
+        <name>oplusImpl</name>
+        <param>
+          <type>const double *</type>
+          <declname>update</declname>
+        </param>
+        <briefdescription>
+<para>设置顶点的更新规则 update为更新量 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_vertex.h" line="52" column="1" bodyfile="include/curve_fitting_vertex.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCurveFittingVertex_1aa96dd0a2d3d3bfe757484c912dd0f27b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool CurveFittingVertex::read</definition>
+        <argsstring>(std::istream &amp;in) override</argsstring>
+        <name>read</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_vertex.h" line="54" column="1" bodyfile="include/curve_fitting_vertex.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCurveFittingVertex_1aa1443355babb211e227422ea0675dc32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool CurveFittingVertex::write</definition>
+        <argsstring>(std::ostream &amp;out) const override</argsstring>
+        <name>write</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/curve_fitting_vertex.h" line="55" column="1" bodyfile="include/curve_fitting_vertex.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="15">
+        <label>g2o::BaseVertex&lt; 3, Eigen::Vector3d &gt;</label>
+      </node>
+      <node id="14">
+        <label>CurveFittingVertex</label>
+        <link refid="classCurveFittingVertex"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>g2o::BaseVertex&lt; 3, Eigen::Vector3d &gt;</label>
+      </node>
+      <node id="16">
+        <label>CurveFittingVertex</label>
+        <link refid="classCurveFittingVertex"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/curve_fitting_vertex.h" line="34" column="1" bodyfile="include/curve_fitting_vertex.h" bodystart="33" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classCurveFittingVertex_1a4e384a35c5f108f2ca7fbcad204c4df3" prot="public" virt="virtual"><scope>CurveFittingVertex</scope><name>oplusImpl</name></member>
+      <member refid="classCurveFittingVertex_1aa96dd0a2d3d3bfe757484c912dd0f27b" prot="public" virt="virtual"><scope>CurveFittingVertex</scope><name>read</name></member>
+      <member refid="classCurveFittingVertex_1a47ac379f177a871d1352c1c9dc64fa16" prot="public" virt="virtual"><scope>CurveFittingVertex</scope><name>setToOriginImpl</name></member>
+      <member refid="classCurveFittingVertex_1aa1443355babb211e227422ea0675dc32" prot="public" virt="virtual"><scope>CurveFittingVertex</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

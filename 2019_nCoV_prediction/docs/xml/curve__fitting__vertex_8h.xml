@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="curve__fitting__vertex_8h" kind="file" language="C++">
+    <compoundname>curve_fitting_vertex.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">Eigen/Core</includes>
+    <includes local="no">g2o/core/base_vertex.h</includes>
+    <includedby refid="curve__fitting__edge_8h" local="yes">include/curve_fitting_edge.h</includedby>
+    <includedby refid="nCoV_8h" local="yes">include/nCoV.h</includedby>
+    <incdepgraph>
+      <node id="93">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="94">
+        <label>g2o/core/base_vertex.h</label>
+      </node>
+      <node id="91">
+        <label>include/curve_fitting_vertex.h</label>
+        <link refid="curve_fitting_vertex.h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="98">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="97">
+        <label>include/nCoV.h</label>
+        <link refid="nCoV_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>src/nCoV.cpp</label>
+        <link refid="nCoV_8cpp"/>
+      </node>
+      <node id="96">
+        <label>include/curve_fitting_edge.h</label>
+        <link refid="curve__fitting__edge_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>include/curve_fitting_vertex.h</label>
+        <link refid="curve_fitting_vertex.h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCurveFittingVertex" prot="public">CurveFittingVertex</innerclass>
+    <briefdescription>
+<para>The G2O model&apos;s vertex implementation file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>PeripateticWind (<ulink url="mailto:zhangzhihong@stu.xjtu.edu.cn">zhangzhihong@stu.xjtu.edu.cn</ulink>) </para></simplesect>
+<simplesect kind="version"><para>1.0.0 </para></simplesect>
+<simplesect kind="date"><para>2020-02-10 22:43:51 </para></simplesect>
+<simplesect kind="par"><title>LastEditor</title><para>PeripateticWind </para></simplesect>
+<simplesect kind="par"><title>LastEditTime</title><para>2020-02-10 22:43:51 </para></simplesect>
+<simplesect kind="par"><title>Email</title><para><ulink url="mailto:zhangzhihong@stu.xjtu.edu.cn">zhangzhihong@stu.xjtu.edu.cn</ulink> </para></simplesect>
+<simplesect kind="par"><title>Company</title><para>Xi&apos;an Jiaotong University </para></simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2020 PeripateticWind. All rights reserved. </para></simplesect>
+<simplesect kind="par"><title>License</title><para>Licensed under the MIT License. </para></simplesect>
+<simplesect kind="par"><title>Changelog</title><para><table rows="2" cols="4"><caption>Change Log</caption>
+<row>
+<entry thead="yes"><para>Date </para></entry><entry thead="yes"><para>Version </para></entry><entry thead="yes"><para>Author </para></entry><entry thead="yes"><para>Description </para></entry></row>
+<row>
+<entry thead="no"><para>2020-02-10 22:43:51 </para></entry><entry thead="no"><para>1.0.0 </para></entry><entry thead="no"><para>PeripateticWind </para></entry><entry thead="no"><para>change log </para></entry></row>
+</table>
+</para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="22"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Eigen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Eigen/Core&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>G2O</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;g2o/core/base_vertex.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classCurveFittingVertex" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCurveFittingVertex" kindref="compound">CurveFittingVertex</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>g2o::BaseVertex&lt;3,<sp/>Eigen::Vector3d&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>EIGEN_MAKE_ALIGNED_OPERATOR_NEW</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classCurveFittingVertex_1a47ac379f177a871d1352c1c9dc64fa16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCurveFittingVertex_1a47ac379f177a871d1352c1c9dc64fa16" kindref="member">setToOriginImpl</ref>()<sp/>override<sp/><sp/></highlight><highlight class="comment">//<sp/>设置顶点的初始值</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_estimate<sp/>&lt;&lt;<sp/>0,<sp/>0,<sp/>0;<sp/><sp/></highlight><highlight class="comment">//<sp/>estimate即为需要更新的顶点数据(此处为一个3维向量)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classCurveFittingVertex_1a4e384a35c5f108f2ca7fbcad204c4df3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCurveFittingVertex_1a4e384a35c5f108f2ca7fbcad204c4df3" kindref="member">oplusImpl</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>update)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/>_estimate<sp/>+=<sp/>Eigen::Vector3d(update);<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>存盘和读盘:留空</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classCurveFittingVertex_1aa96dd0a2d3d3bfe757484c912dd0f27b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCurveFittingVertex_1aa96dd0a2d3d3bfe757484c912dd0f27b" kindref="member">read</ref>(std::istream&amp;<sp/>in)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="55" refid="classCurveFittingVertex_1aa1443355babb211e227422ea0675dc32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCurveFittingVertex_1aa1443355babb211e227422ea0675dc32" kindref="member">write</ref>(std::ostream&amp;<sp/>out)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/curve_fitting_vertex.h"/>
+  </compounddef>
+</doxygen>

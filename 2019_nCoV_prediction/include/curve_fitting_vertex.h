@@ -1,15 +1,23 @@
-/*
- * @Author       : PeripateticWind
- * @Email        : zhangzhihong@stu.xjtu.edu.cn
- * @Company      : Xi'an Jiaotong University
- * @CreateTime   : 2020-02-03 16:29:46
- * @Description  : The G2O model's vertex implementation file
- * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/include/curve_fitting_vertex.h
- * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-07 08:46:52
- * @youwant      : add what you want
- * @Copyright (c) 2020, PeripateticWind. All rights reserved.
- */
+/**
+ * @file curve_fitting_vertex.h
+ * @author PeripateticWind (zhangzhihong@stu.xjtu.edu.cn)
+ * @brief The G2O model's vertex implementation file
+ * @version 1.0.0
+ * @date 2020-02-10 22:43:51
+ * @lasteditor PeripateticWind
+ * @lastedittime 2020-02-10 22:43:51
+ * @email zhangzhihong@stu.xjtu.edu.cn
+ * @company Xi'an Jiaotong University
+ * @copyright Copyright (c) 2020 PeripateticWind.   All rights reserved.
+ * @license Licensed under the MIT License.
+ * @par Changelog
+ * <table>
+ * <caption>Change Log</caption>
+ * <tr><th>Date       <th>Version <th>Author  <th>Description
+ * <tr><td>2020-02-10 22:43:51 <td>1.0.0     <td>PeripateticWind     <td>change log
+ * </table>
+ *
+ **/
 
 #pragma once
 

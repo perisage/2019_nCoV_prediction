@@ -1,3 +1,17 @@
+# vscode 
+.vscode/
+
+# project build
+2019_nCoV_prediction/build/
+# npm
+node_modules/
+# docs
+2019_nCoV_prediction/docs/*.cmake
+2019_nCoV_prediction/docs/Doxy*
+
+
+
+
 # Prerequisites
 *.d
 
@@ -31,5 +45,3 @@
 *.out
 *.app
 
-2019_nCoV_prediction/build/
-.vscode/

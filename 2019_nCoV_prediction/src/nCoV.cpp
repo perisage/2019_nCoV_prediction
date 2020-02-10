@@ -1,15 +1,24 @@
-/*
- * @Author       : PeripateticWind
- * @Email        : zhangzhihong@stu.xjtu.edu.cn
- * @Company      : Xi'an Jiaotong University
- * @CreateTime   : 2020-02-03 16:29:46
- * @Description  : the nCoV class implementation file
- * @FilePath     : /2019_nCoV_prediction/2019_nCoV_prediction/src/nCoV.cpp
- * @LastEditors  : PeripateticWind
- * @LastEditTime : 2020-02-07 09:28:21
- * @youwant      : add what you want
- * @Copyright (c) 2020, PeripateticWind. All rights reserved.
- */
+
+/**
+ * @file nCoV.cpp
+ * @author PeripateticWind (zhangzhihong@stu.xjtu.edu.cn)
+ * @brief the nCoV class implementation file
+ * @version 1.0.0
+ * @date 2020-02-10 22:43:01
+ * @lasteditor PeripateticWind
+ * @lastedittime 2020-02-10 22:43:01
+ * @email zhangzhihong@stu.xjtu.edu.cn
+ * @company Xi'an Jiaotong University
+ * @copyright Copyright (c) 2020 PeripateticWind.   All rights reserved.
+ * @license Licensed under the MIT License.
+ * @par Changelog
+ * <table>
+ * <caption>Change Log</caption>
+ * <tr><th>Date       <th>Version <th>Author  <th>Description
+ * <tr><td>2020-02-10 22:43:01 <td>1.0.0     <td>PeripateticWind     <td>change log
+ * </table>
+ *
+ **/
 
 #include "nCoV.h"
 
@@ -51,9 +60,14 @@ nCoV::nCoV(int predictDays)
     predict();   // 模型预测
 }
 
-//! 模型优化
 /*!
  * @brief G2O图模型优化
+ **/
+
+/**
+ * @brief
+ *
+ *
  **/
 void nCoV::optimize()
 {
@@ -116,7 +130,6 @@ void nCoV::optimize()
     LOG_INFO << "write parameter to file successfully!";
 }
 
-//! 感染人数预测
 /*!
  * @brief 根据优化的图模型，预测指定天数每天的感染人数
  *
