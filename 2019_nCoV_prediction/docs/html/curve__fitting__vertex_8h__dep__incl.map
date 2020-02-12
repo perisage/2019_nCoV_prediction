@@ -1,6 +1,6 @@
 <map id="include/curve_fitting_vertex.h" name="include/curve_fitting_vertex.h">
 <area shape="rect" id="node2" href="$curve__fitting__edge_8h.html" title="The G2O model&#39;s edge implementation file. " alt="" coords="5,95,144,136"/>
 <area shape="rect" id="node3" href="$nCoV_8h.html" title="the nCoV class declaration file " alt="" coords="73,184,183,211"/>
-<area shape="rect" id="node4" href="$main_8cpp.html" title="the 2019_nCoV prediction program main node " alt="" coords="18,259,115,285"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="18,259,115,285"/>
 <area shape="rect" id="node5" href="$nCoV_8cpp.html" title="the nCoV class implementation file " alt="" coords="139,259,242,285"/>
 </map>

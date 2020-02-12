@@ -22,10 +22,11 @@
 
 #include "nCoV.h"
 
+//! nCoV class，用以建立图模型并优化，最后预测
 /**
  * @brief Construct a new nCoV::nCoV object
  *
- * @param predictDays the days you want to predict
+ * @param[in] predictDays the days you want to predict
  */
 nCoV::nCoV(int predictDays)
     : _predictDays(predictDays)      // 要预测的天数
@@ -60,14 +61,10 @@ nCoV::nCoV(int predictDays)
     predict();   // 模型预测
 }
 
-/*!
- * @brief G2O图模型优化
- **/
-
+//! G2O图模型优化
 /**
- * @brief
- *
- *
+ * @brief G2O图模型优化，用来建立SIR模型，优化该模型的参数值
+ * @post 之后需要调用prediction函数进行预测
  **/
 void nCoV::optimize()
 {
@@ -120,6 +117,7 @@ void nCoV::optimize()
     LOG_WARNING << "The SARS SIR model S0 is " << 5237.0;
     LOG_WARNING << "2019_nCoV is " << LOG_RED << _parameterEstimated[0] / 5237.0 << LOG_YELLOW << " times of the SARS!";
 
+    // 将优化得到的模型参数文件写入文件供python文件读取。
     std::ofstream parameterFile("../data/parameter.txt");  // 模型参数文件
     if (!parameterFile.is_open())
     {
@@ -130,9 +128,10 @@ void nCoV::optimize()
     LOG_INFO << "write parameter to file successfully!";
 }
 
+//! 根据SIR模型，预测感染人数
 /*!
- * @brief 根据优化的图模型，预测指定天数每天的感染人数
- *
+ * @brief 根据图模型优化的参数，建立SIR模型，预测指定天数每天的感染人数
+ * @pre 必须先调用optimize函数进行模型优化
  **/
 void nCoV::predict()
 {

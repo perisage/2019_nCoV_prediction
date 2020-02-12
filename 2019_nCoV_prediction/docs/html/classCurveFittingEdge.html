@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>application document: CurveFittingEdge Class Reference</title>
+<title>Application Document: CurveFittingEdge Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">application document
+   <div id="projectname">Application Document
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="usergroup0.html"><span>PeripateticWind</span></a></li>
@@ -85,12 +86,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classCurveFittingEdge-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CurveFittingEdge Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classCurveFittingEdge.html" title="CurveFittingEdge g2o图优化模型的边类 ">CurveFittingEdge</a> g2o图优化模型的边类  
+ <a href="classCurveFittingEdge.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="curve__fitting__edge_8h_source.html">curve_fitting_edge.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -107,22 +111,28 @@ Collaboration diagram for CurveFittingEdge:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a7ee01bc38a44a179faa78d78bcdc0b"><td class="memItemLeft" align="right" valign="top">EIGEN_MAKE_ALIGNED_OPERATOR_NEW&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveFittingEdge.html#a3a7ee01bc38a44a179faa78d78bcdc0b">CurveFittingEdge</a> (double x)</td></tr>
-<tr class="memdesc:a3a7ee01bc38a44a179faa78d78bcdc0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Curve Fitting Edge object.  <a href="#a3a7ee01bc38a44a179faa78d78bcdc0b">More...</a><br /></td></tr>
+<tr class="memdesc:a3a7ee01bc38a44a179faa78d78bcdc0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">G2O边模型构造函数  <a href="#a3a7ee01bc38a44a179faa78d78bcdc0b">More...</a><br /></td></tr>
 <tr class="separator:a3a7ee01bc38a44a179faa78d78bcdc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4497b29e2f168d877d7a858457b69fd1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveFittingEdge.html#a4497b29e2f168d877d7a858457b69fd1">computeError</a> () override</td></tr>
 <tr class="memdesc:a4497b29e2f168d877d7a858457b69fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算曲线模型误差  <a href="#a4497b29e2f168d877d7a858457b69fd1">More...</a><br /></td></tr>
 <tr class="separator:a4497b29e2f168d877d7a858457b69fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a517490d29ac656c6a0fc100b1af7cd9f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveFittingEdge.html#a517490d29ac656c6a0fc100b1af7cd9f">read</a> (std::istream &amp;in) override</td></tr>
+<tr class="memdesc:a517490d29ac656c6a0fc100b1af7cd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">读盘,留空  <a href="#a517490d29ac656c6a0fc100b1af7cd9f">More...</a><br /></td></tr>
 <tr class="separator:a517490d29ac656c6a0fc100b1af7cd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70bde4a6cbed5fc825a069c6f1f45caa"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveFittingEdge.html#a70bde4a6cbed5fc825a069c6f1f45caa">write</a> (std::ostream &amp;out) const override</td></tr>
+<tr class="memdesc:a70bde4a6cbed5fc825a069c6f1f45caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">存盘,留空  <a href="#a70bde4a6cbed5fc825a069c6f1f45caa">More...</a><br /></td></tr>
 <tr class="separator:a70bde4a6cbed5fc825a069c6f1f45caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:ad0cf7b012c9e4585a6919b982f148449"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveFittingEdge.html#ad0cf7b012c9e4585a6919b982f148449">_x</a></td></tr>
+<tr class="memdesc:ad0cf7b012c9e4585a6919b982f148449"><td class="mdescLeft">&#160;</td><td class="mdescRight">x的值 y的值为_measurement  <a href="#ad0cf7b012c9e4585a6919b982f148449">More...</a><br /></td></tr>
 <tr class="separator:ad0cf7b012c9e4585a6919b982f148449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classCurveFittingEdge.html" title="CurveFittingEdge g2o图优化模型的边类 ">CurveFittingEdge</a> g2o图优化模型的边类 </p>
+<p>g2o图优化模型的边类，定义残差计算规则和模型的自变量 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3a7ee01bc38a44a179faa78d78bcdc0b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -145,10 +155,11 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a new Curve Fitting Edge object. </p>
+<p>G2O边模型构造函数 </p>
+<p>Construct a new Curve Fitting Edge object</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>模型自变量x </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>模型自变量x </td></tr>
   </table>
   </dd>
 </dl>
@@ -203,6 +214,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>读盘,留空 </p>
+
 </div>
 </div>
 <a class="anchor" id="a70bde4a6cbed5fc825a069c6f1f45caa"></a>
@@ -227,18 +240,30 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>存盘,留空 </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ad0cf7b012c9e4585a6919b982f148449"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double CurveFittingEdge::_x</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>x的值 y的值为_measurement </p>
 
 </div>
 </div>

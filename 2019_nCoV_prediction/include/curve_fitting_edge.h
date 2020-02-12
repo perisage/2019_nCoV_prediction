@@ -19,7 +19,9 @@
  *
  **/
 
-#pragma once
+#ifndef __CURVE_FITTING_EDGE_H__
+#define __CURVE_FITTING_EDGE_H__
+
 // STL
 #include <iostream>
 
@@ -32,15 +34,21 @@
 // USER
 #include "curve_fitting_vertex.h"
 
+//! CurveFittingEdge g2o图优化模型的边类
+/**
+ * @brief g2o图优化模型的边类，定义残差计算规则和模型的自变量
+ *
+ **/
 class CurveFittingEdge : public g2o::BaseUnaryEdge<1, double, CurveFittingVertex>
 {
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 
+    //! G2O边模型构造函数
     /**
      * @brief Construct a new Curve Fitting Edge object
      *
-     * @param x 模型自变量x
+     * @param[in] x 模型自变量x
      */
     CurveFittingEdge(double x)
         : BaseUnaryEdge()
@@ -60,10 +68,13 @@ public:
         _error(0, 0) = _measurement - vertexEstimation(0, 0) * vertexEstimation(1, 0) / (vertexEstimation(1, 0) + (vertexEstimation(0, 0) - vertexEstimation(1, 0)) * std::exp(-vertexEstimation(2, 0) * _x));  // 计算误差值 _measurement为观测值,
     }
 
-    // 存盘和读盘:留空
+    //! 读盘,留空
     virtual bool read(std::istream& in) override {}
+    //! 存盘,留空
     virtual bool write(std::ostream& out) const override {}
 
-public:
-    double _x;  // x的值 y的值为_measurement
+private:
+    double _x;  ///< x的值 y的值为_measurement
 };
+
+#endif  // !__CURVE_FITTING_EDGE_H__

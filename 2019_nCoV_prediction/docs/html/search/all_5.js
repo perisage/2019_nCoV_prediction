@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['oplusimpl',['oplusImpl',['../classCurveFittingVertex.html#a4e384a35c5f108f2ca7fbcad204c4df3',1,'CurveFittingVertex']]],
-  ['optimize',['optimize',['../classnCoV.html#acf5ddd73cab8522622b2602258507c08',1,'nCoV']]]
+  ['ncov',['nCoV',['../classnCoV.html',1,'nCoV'],['../classnCoV.html#a30d4a90c5f401cf6943e104ec737dc48',1,'nCoV::nCoV()']]],
+  ['ncov_2ecpp',['nCoV.cpp',['../nCoV_8cpp.html',1,'']]],
+  ['ncov_2eh',['nCoV.h',['../nCoV_8h.html',1,'']]]
 ];

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="63" column="1" bodyfile="include/nCoV.h" bodystart="63" bodyend="-1"/>
+        <location file="include/nCoV.h" line="59" column="1" bodyfile="include/nCoV.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classnCoV_1a71d73f9132ff05684bb8f830bd1f4232" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="66" column="1" bodyfile="include/nCoV.h" bodystart="66" bodyend="-1"/>
+        <location file="include/nCoV.h" line="60" column="1" bodyfile="include/nCoV.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classnCoV_1a9585e58cac7c3c4cf26fe0291b809f06" prot="private" static="no" mutable="no">
         <type>std::ifstream</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="69" column="1" bodyfile="include/nCoV.h" bodystart="69" bodyend="-1"/>
+        <location file="include/nCoV.h" line="61" column="1" bodyfile="include/nCoV.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classnCoV_1a11802f3972f62a07b77b1847f1d010a8" prot="private" static="no" mutable="no">
         <type>std::vector&lt; double &gt;</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="72" column="1" bodyfile="include/nCoV.h" bodystart="72" bodyend="-1"/>
+        <location file="include/nCoV.h" line="62" column="1" bodyfile="include/nCoV.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classnCoV_1a8e122688ffc8ee32df05f0cb6ef25920" prot="private" static="no" mutable="no">
         <type>std::vector&lt; double &gt;</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="75" column="1" bodyfile="include/nCoV.h" bodystart="75" bodyend="-1"/>
+        <location file="include/nCoV.h" line="63" column="1" bodyfile="include/nCoV.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classnCoV_1ae34cb58fd08703599158b69853b659a2" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -75,12 +75,12 @@
         <argsstring>[3]</argsstring>
         <name>_parameter</name>
         <briefdescription>
-        </briefdescription>
+<para>待优化的SIR模型参数的初值 </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="77" column="1" bodyfile="include/nCoV.h" bodystart="77" bodyend="-1"/>
+        <location file="include/nCoV.h" line="65" column="1" bodyfile="include/nCoV.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classnCoV_1a6980bf4492a8ce437b15ac9625eacfce" prot="private" static="no" mutable="no">
         <type>Eigen::Vector3d</type>
@@ -88,12 +88,12 @@
         <argsstring></argsstring>
         <name>_parameterEstimated</name>
         <briefdescription>
-        </briefdescription>
+<para>优化后的SIR模型参数值 </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="78" column="1" bodyfile="include/nCoV.h" bodystart="78" bodyend="-1"/>
+        <location file="include/nCoV.h" line="66" column="1" bodyfile="include/nCoV.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -103,12 +103,13 @@
         <argsstring>()</argsstring>
         <name>optimize</name>
         <briefdescription>
-<para>G2O图模型优化 </para>        </briefdescription>
+<para>模型优化函数 </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>G2O图模型优化</para><para>G2O图模型优化，用来建立SIR模型，优化该模型的参数值 <simplesect kind="post"><para>之后需要调用prediction函数进行预测 </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="80" column="1" bodyfile="src/nCoV.cpp" bodystart="72" bodyend="131"/>
+        <location file="include/nCoV.h" line="68" column="1" bodyfile="src/nCoV.cpp" bodystart="69" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="classnCoV_1a5a0b30d27da271601d45c144c6a3da2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -116,12 +117,13 @@
         <argsstring>()</argsstring>
         <name>predict</name>
         <briefdescription>
-<para>根据优化的图模型，预测指定天数每天的感染人数 </para>        </briefdescription>
+<para>模型预测函数 </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>根据SIR模型，预测感染人数</para><para>根据图模型优化的参数，建立SIR模型，预测指定天数每天的感染人数 <simplesect kind="pre"><para>必须先调用optimize函数进行模型优化 </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="81" column="1" bodyfile="src/nCoV.cpp" bodystart="137" bodyend="162"/>
+        <location file="include/nCoV.h" line="69" column="1" bodyfile="src/nCoV.cpp" bodystart="136" bodyend="161"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -135,11 +137,11 @@
           <declname>predictDays</declname>
         </param>
         <briefdescription>
-<para>Construct a new <ref refid="classnCoV_1a30d4a90c5f401cf6943e104ec737dc48" kindref="member">nCoV::nCoV</ref> object. </para>        </briefdescription>
+<para><ref refid="classnCoV" kindref="compound">nCoV</ref> class，用以建立图模型并优化，最后预测 </para>        </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para>Construct a new <ref refid="classnCoV_1a30d4a90c5f401cf6943e104ec737dc48" kindref="member">nCoV::nCoV</ref> object</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>predictDays</parametername>
+<parametername direction="in">predictDays</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>the days you want to predict </para></parameterdescription>
@@ -148,14 +150,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/nCoV.h" line="83" column="1" bodyfile="src/nCoV.cpp" bodystart="30" bodyend="61"/>
+        <location file="include/nCoV.h" line="71" column="1" bodyfile="src/nCoV.cpp" bodystart="31" bodyend="62"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="classnCoV" kindref="compound">nCoV</ref> class </para>    </briefdescription>
     <detaileddescription>
-<para>A test class.</para><para>A more elaborate class description. </para>    </detaileddescription>
-    <location file="include/nCoV.h" line="60" column="1" bodyfile="include/nCoV.h" bodystart="59" bodyend="84"/>
+<para><ref refid="classnCoV" kindref="compound">nCoV</ref> class to optimaize the graph model and predict infected numbers </para>    </detaileddescription>
+    <location file="include/nCoV.h" line="57" column="1" bodyfile="include/nCoV.h" bodystart="56" bodyend="72"/>
     <listofallmembers>
       <member refid="classnCoV_1a9585e58cac7c3c4cf26fe0291b809f06" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_dataFile</name></member>
       <member refid="classnCoV_1a7182f86ff0f0f607cd461ebe738fb9da" prot="private" virt="non-virtual"><scope>nCoV</scope><name>_dataSize</name></member>

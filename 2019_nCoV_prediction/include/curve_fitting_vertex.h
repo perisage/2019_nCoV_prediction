@@ -19,7 +19,8 @@
  *
  **/
 
-#pragma once
+#ifndef __CURVE_FITTING_VERTEX_H__
+#define __CURVE_FITTING_VERTEX_H__
 
 // STL
 #include <iostream>
@@ -30,6 +31,11 @@
 // G2O
 #include <g2o/core/base_vertex.h>
 
+//! CurveFittingVertex g2o图优化模型的顶点类
+/**
+ * @brief g2o图优化模型的顶点类，设置初值，以及顶点更新规则
+ *
+ **/
 class CurveFittingVertex : public g2o::BaseVertex<3, Eigen::Vector3d>
 {
 public:
@@ -47,10 +53,13 @@ public:
     /**
      * @brief 设置顶点的更新规则 update为更新量
      *
-     * @param update
+     * @param[in] update 更新变量
      */
     virtual void oplusImpl(const double* update) override { _estimate += Eigen::Vector3d(update); }
-    // 存盘和读盘:留空
+    //! 读盘,留空
     virtual bool read(std::istream& in) override {}
+    //! 存盘,留空
     virtual bool write(std::ostream& out) const override {}
 };
+
+#endif  // !__CURVE_FITTING_VERTEX_H__

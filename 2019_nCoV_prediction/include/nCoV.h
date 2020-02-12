@@ -48,39 +48,27 @@
 #include "curve_fitting_edge.h"
 #include "curve_fitting_vertex.h"
 
+//!  nCoV class
 /**
- * @brief
+ * @brief nCoV class to optimaize the graph model and predict infected numbers
  *
  */
-//!  A test class.
-/*!
-  A more elaborate class description.
-*/
 class nCoV
 {
 private:
-    //! 数据量，每天1条数据，即为天数
-    int _dataSize;
+    int                 _dataSize;     ///< 数据量，每天1条数据，即为天数
+    int                 _predictDays;  ///< 要预测的天数
+    std::ifstream       _dataFile;     ///< 数据文件
+    std::vector<double> _xData;        ///< 优化模型的自变量，为每日日期
+    std::vector<double> _yData;        ///< 优化模型的因变量，为每日累计感染人数
 
-    //! 要预测的天数
-    int _predictDays;
+    double          _parameter[3];        ///< 待优化的SIR模型参数的初值
+    Eigen::Vector3d _parameterEstimated;  ///< 优化后的SIR模型参数值
 
-    //! 数据文件
-    std::ifstream _dataFile;
-
-    //! 优化模型的自变量，为每日日期
-    std::vector<double> _xData;
-
-    //! 优化模型的因变量，为每日累计感染人数
-    std::vector<double> _yData;
-
-    double          _parameter[3];        // 待优化的SIR模型参数的初值
-    Eigen::Vector3d _parameterEstimated;  // 优化后的SIR模型参数值
-
-    void optimize();  // 模型优化
-    void predict();   // 模型预测
+    void optimize();  ///< 模型优化函数
+    void predict();   ///< 模型预测函数
 public:
-    nCoV(int predictDays);  // 构造函数
+    nCoV(int predictDays);
 };
 
 #endif  // !__NCOV_H__

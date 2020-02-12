@@ -2,20 +2,25 @@
 \label{classnCoV}\index{n\+CoV@{n\+CoV}}
 
 
+\hyperlink{classnCoV}{n\+CoV} class  
+
+
+
+
 {\ttfamily \#include $<$n\+Co\+V.\+h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{n\+CoV} (int predict\+Days)
-\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{n\+Co\+V\+::n\+CoV} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classnCoV}{n\+CoV} class，用以建立图模型并优化，最后预测 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classnCoV_acf5ddd73cab8522622b2602258507c08}{optimize} ()
-\begin{DoxyCompactList}\small\item\em G2\+O图模型优化 \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em 模型优化函数 \end{DoxyCompactList}\item 
 void \hyperlink{classnCoV_a5a0b30d27da271601d45c144c6a3da2d}{predict} ()
-\begin{DoxyCompactList}\small\item\em 根据优化的图模型，预测指定天数每天的感染人数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 模型预测函数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,15 +35,15 @@ std\+::vector$<$ double $>$ \hyperlink{classnCoV_a11802f3972f62a07b77b1847f1d010
 std\+::vector$<$ double $>$ \hyperlink{classnCoV_a8e122688ffc8ee32df05f0cb6ef25920}{\+\_\+y\+Data}
 \begin{DoxyCompactList}\small\item\em 优化模型的因变量，为每日累计感染人数 \end{DoxyCompactList}\item 
 double \hyperlink{classnCoV_ae34cb58fd08703599158b69853b659a2}{\+\_\+parameter} \mbox{[}3\mbox{]}
-\item 
+\begin{DoxyCompactList}\small\item\em 待优化的\+S\+I\+R模型参数的初值 \end{DoxyCompactList}\item 
 Eigen\+::\+Vector3d \hyperlink{classnCoV_a6980bf4492a8ce437b15ac9625eacfce}{\+\_\+parameter\+Estimated}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 优化后的\+S\+I\+R模型参数值 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-A test class.
+\hyperlink{classnCoV}{n\+CoV} class 
 
-A more elaborate class description. 
+\hyperlink{classnCoV}{n\+CoV} class to optimaize the graph model and predict infected numbers 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{n\+CoV@{n\+CoV}!n\+CoV@{n\+CoV}}
@@ -50,11 +55,13 @@ A more elaborate class description.
 )}\hypertarget{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{}\label{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}
 
 
-Construct a new \hyperlink{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{n\+Co\+V\+::n\+CoV} object. 
+\hyperlink{classnCoV}{n\+CoV} class，用以建立图模型并优化，最后预测 
+
+Construct a new \hyperlink{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{n\+Co\+V\+::n\+CoV} object
 
 
-\begin{DoxyParams}{Parameters}
-{\em predict\+Days} & the days you want to predict \\
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em predict\+Days} & the days you want to predict \\
 \hline
 \end{DoxyParams}
 
@@ -69,8 +76,13 @@ Construct a new \hyperlink{classnCoV_a30d4a90c5f401cf6943e104ec737dc48}{n\+Co\+V
 )\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_acf5ddd73cab8522622b2602258507c08}{}\label{classnCoV_acf5ddd73cab8522622b2602258507c08}
 
 
-G2\+O图模型优化 
+模型优化函数 
 
+G2\+O图模型优化
+
+G2\+O图模型优化，用来建立\+S\+I\+R模型，优化该模型的参数值 \begin{DoxyPostcond}{Postcondition}
+之后需要调用prediction函数进行预测 
+\end{DoxyPostcond}
 \index{n\+CoV@{n\+CoV}!predict@{predict}}
 \index{predict@{predict}!n\+CoV@{n\+CoV}}
 \subsubsection[{\texorpdfstring{predict()}{predict()}}]{\setlength{\rightskip}{0pt plus 5cm}void n\+Co\+V\+::predict (
@@ -80,8 +92,13 @@ G2\+O图模型优化
 )\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a5a0b30d27da271601d45c144c6a3da2d}{}\label{classnCoV_a5a0b30d27da271601d45c144c6a3da2d}
 
 
-根据优化的图模型，预测指定天数每天的感染人数 
+模型预测函数 
 
+根据\+S\+I\+R模型，预测感染人数
+
+根据图模型优化的参数，建立\+S\+I\+R模型，预测指定天数每天的感染人数 \begin{DoxyPrecond}{Precondition}
+必须先调用optimize函数进行模型优化 
+\end{DoxyPrecond}
 
 
 \subsection{Member Data Documentation}
@@ -102,9 +119,17 @@ G2\+O图模型优化
 \index{n\+CoV@{n\+CoV}!\+\_\+parameter@{\+\_\+parameter}}
 \index{\+\_\+parameter@{\+\_\+parameter}!n\+CoV@{n\+CoV}}
 \subsubsection[{\texorpdfstring{\+\_\+parameter}{_parameter}}]{\setlength{\rightskip}{0pt plus 5cm}double n\+Co\+V\+::\+\_\+parameter\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_ae34cb58fd08703599158b69853b659a2}{}\label{classnCoV_ae34cb58fd08703599158b69853b659a2}
+
+
+待优化的\+S\+I\+R模型参数的初值 
+
 \index{n\+CoV@{n\+CoV}!\+\_\+parameter\+Estimated@{\+\_\+parameter\+Estimated}}
 \index{\+\_\+parameter\+Estimated@{\+\_\+parameter\+Estimated}!n\+CoV@{n\+CoV}}
 \subsubsection[{\texorpdfstring{\+\_\+parameter\+Estimated}{_parameterEstimated}}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\+::\+Vector3d n\+Co\+V\+::\+\_\+parameter\+Estimated\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a6980bf4492a8ce437b15ac9625eacfce}{}\label{classnCoV_a6980bf4492a8ce437b15ac9625eacfce}
+
+
+优化后的\+S\+I\+R模型参数值 
+
 \index{n\+CoV@{n\+CoV}!\+\_\+predict\+Days@{\+\_\+predict\+Days}}
 \index{\+\_\+predict\+Days@{\+\_\+predict\+Days}!n\+CoV@{n\+CoV}}
 \subsubsection[{\texorpdfstring{\+\_\+predict\+Days}{_predictDays}}]{\setlength{\rightskip}{0pt plus 5cm}int n\+Co\+V\+::\+\_\+predict\+Days\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classnCoV_a71d73f9132ff05684bb8f830bd1f4232}{}\label{classnCoV_a71d73f9132ff05684bb8f830bd1f4232}

@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main.cpp" line="33" column="1"/>
+        <location file="src/main.cpp" line="58" column="1"/>
       </memberdef>
       <memberdef kind="function" id="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -160,53 +160,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/main.cpp" line="35" column="1" bodyfile="src/main.cpp" bodystart="35" bodyend="48"/>
+        <location file="src/main.cpp" line="60" column="1" bodyfile="src/main.cpp" bodystart="60" bodyend="73"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>the 2019_nCoV prediction program main node </para>    </briefdescription>
+    </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>PeripateticWind (<ulink url="mailto:zhangzhihong@stu.xjtu.edu.cn">zhangzhihong@stu.xjtu.edu.cn</ulink>) </para></simplesect>
-<simplesect kind="version"><para>1.0.0 </para></simplesect>
-<simplesect kind="date"><para>2020-02-10 22:42:35 </para></simplesect>
-<simplesect kind="par"><title>LastEditor</title><para>PeripateticWind </para></simplesect>
-<simplesect kind="par"><title>LastEditTime</title><para>2020-02-10 22:42:35 </para></simplesect>
-<simplesect kind="par"><title>Email</title><para><ulink url="mailto:zhangzhihong@stu.xjtu.edu.cn">zhangzhihong@stu.xjtu.edu.cn</ulink> </para></simplesect>
-<simplesect kind="par"><title>Company</title><para>Xi&apos;an Jiaotong University </para></simplesect>
-<simplesect kind="copyright"><para>Copyright (c) 2020 PeripateticWind. All rights reserved. </para></simplesect>
-<simplesect kind="par"><title>License</title><para>Licensed under the MIT License. </para></simplesect>
-<simplesect kind="par"><title>Changelog</title><para><table rows="2" cols="4"><caption>Change Log</caption>
-<row>
-<entry thead="yes"><para>Date </para></entry><entry thead="yes"><para>Version </para></entry><entry thead="yes"><para>Author </para></entry><entry thead="yes"><para>Description </para></entry></row>
-<row>
-<entry thead="no"><para>2020-02-10 22:42:35 </para></entry><entry thead="no"><para>1.0.0 </para></entry><entry thead="no"><para>PeripateticWind </para></entry><entry thead="no"><para>change log </para></entry></row>
-</table>
-</para></simplesect>
-</para>    </detaileddescription>
+    </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
-<codeline lineno="22"><highlight class="comment">//<sp/>GOOGLE<sp/>GFLAGS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gflags/gflags.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>USER</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nCoV_8h" kindref="compound">nCoV.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="main_8cpp_1ac61515ae4926c5ffeb447645eee3ac56" kindref="member">DEFINE_int32</ref>(d,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;the<sp/>days<sp/>to<sp/>predict&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>要预测的天数</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
-<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>Glogger<sp/>logger(</highlight><highlight class="stringliteral">&quot;2019_nCoV_prediction&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>初始化日志系统</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>解析gflags<sp/><sp/>参数</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>gflags::ParseCommandLineFlags(&amp;argc,<sp/>&amp;argv,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_HINT(LOG_GREEN)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;get<sp/>predictDays:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>FLAGS_d;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnCoV" kindref="compound">nCoV</ref><sp/>ncov(FLAGS_d);<sp/><sp/></highlight><highlight class="comment">//<sp/>模型优化与预测</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>此处应该在C++中直接将数据传递给脚本，而不是以system<sp/>command的形式去调用</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>调用python脚本绘制曲线</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>cmd<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;python<sp/>../scripts/plot_sir.py&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>system(cmd);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">//<sp/>GOOGLE<sp/>GFLAGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gflags/gflags.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>USER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nCoV_8h" kindref="compound">nCoV.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="main_8cpp_1ac61515ae4926c5ffeb447645eee3ac56" kindref="member">DEFINE_int32</ref>(d,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;the<sp/>days<sp/>to<sp/>predict&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>要预测的天数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>Glogger<sp/>logger(</highlight><highlight class="stringliteral">&quot;2019_nCoV_prediction&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>初始化日志系统</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>解析gflags<sp/><sp/>参数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>gflags::ParseCommandLineFlags(&amp;argc,<sp/>&amp;argv,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_HINT(LOG_GREEN)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;get<sp/>predictDays:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>FLAGS_d;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnCoV" kindref="compound">nCoV</ref><sp/>ncov(FLAGS_d);<sp/><sp/></highlight><highlight class="comment">//<sp/>模型优化与预测</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>此处应该在C++中直接将数据传递给脚本，而不是以system<sp/>command的形式去调用</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>调用python脚本绘制曲线</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>cmd<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;python<sp/>../scripts/plot_sir.py&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>system(cmd);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/main.cpp"/>
   </compounddef>

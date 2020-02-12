@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>application document: Main Page</title>
+<title>Application Document: The 2019-nCoV Prediction Application</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">application document
+   <div id="projectname">Application Document
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="usergroup0.html"><span>PeripateticWind</span></a></li>
@@ -76,10 +77,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">application document Documentation</div>  </div>
+<div class="title">The 2019-nCoV Prediction Application </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>the 2019_nCoV prediction application main node </p><dl class="section author"><dt>Author</dt><dd>PeripateticWind (<a href="#" onclick="location.href='mai'+'lto:'+'zha'+'ng'+'zhi'+'ho'+'ng@'+'st'+'u.x'+'jt'+'u.e'+'du'+'.cn'; return false;">zhang<span style="display: none;">.nosp@m.</span>zhih<span style="display: none;">.nosp@m.</span>ong@s<span style="display: none;">.nosp@m.</span>tu.x<span style="display: none;">.nosp@m.</span>jtu.e<span style="display: none;">.nosp@m.</span>du.c<span style="display: none;">.nosp@m.</span>n</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2020-02-10 22:42:35 </dd></dl>
+<dl class="section user"><dt>LastEditor</dt><dd>PeripateticWind </dd></dl>
+<dl class="section user"><dt>LastEditTime</dt><dd>2020-02-10 22:42:35 </dd></dl>
+<dl class="section user"><dt>Email</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'zha'+'ng'+'zhi'+'ho'+'ng@'+'st'+'u.x'+'jt'+'u.e'+'du'+'.cn'; return false;">zhang<span style="display: none;">.nosp@m.</span>zhih<span style="display: none;">.nosp@m.</span>ong@s<span style="display: none;">.nosp@m.</span>tu.x<span style="display: none;">.nosp@m.</span>jtu.e<span style="display: none;">.nosp@m.</span>du.c<span style="display: none;">.nosp@m.</span>n</a> </dd></dl>
+<dl class="section user"><dt>Company</dt><dd>Xi'an Jiaotong University </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><ol type="1">
+<li>to add the details of the change log </li>
+</ol>
+</dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd><ol type="1">
+<li>the date will be wrong if no data of current day </li>
+</ol>
+</dd></dl>
+<h1><a class="anchor" id="introduction_ection"></a>
+Introduction</h1>
+<p>2019_nCoV 每日感染人数预测程序 </p>
+<h1><a class="anchor" id="dependencies_section"></a>
+Dependencies</h1>
+<ol type="1">
+<li>用到的C++相关库: G2O GLOG(含youibot log system) GFLAGS</li>
+<li>用到的python功能包: math matplotlib </li>
+</ol>
+<h1><a class="anchor" id="note_section"></a>
+Note Items</h1>
+<ol type="1">
+<li>计算机上需要预先安装G2O。</li>
+<li>日志系统使用的是公司的日志系统，暂不开源，请谅解。如果要在自己的计算机上运行，可将代码中的日志替换为C++标准输出<code>std::cout&lt;&lt;</code>,并取消main中Glogger对象的定义即可。 </li>
+</ol>
+<h1><a class="anchor" id="install_section"></a>
+Installation</h1>
+<p>Just as the follows </p>
+<h2><a class="anchor" id="step1"></a>
+Step 1: install g2o and youibot log system from github</h2>
+<h2><a class="anchor" id="step2"></a>
+Step 2: install math and matplotlib packages for python</h2>
+<h2><a class="anchor" id="step3"></a>
+Step 3: install the application</h2>
+<div class="fragment"><div class="line">$ cd 2019_nCoV_prediction</div><div class="line">$ mkdir build</div><div class="line">$ cd build</div><div class="line">$ cmake ..</div><div class="line">$ make</div></div><!-- fragment --> <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2020 PeripateticWind. All rights reserved. </dd></dl>
+<dl class="section user"><dt>License</dt><dd>Licensed under the MIT License. </dd></dl>
+<dl class="section user"><dt>Changelog</dt><dd><a class="anchor" id=""></a>
+<table class="doxtable">
+<caption>Change Log</caption>
+<tr>
+<th>Date </th><th>Version </th><th>Author </th><th>Description </th></tr>
+<tr>
+<td>2020-02-10 22:42:35 </td><td>1.0.0 </td><td>PeripateticWind </td><td>change log </td></tr>
+</table>
+</dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

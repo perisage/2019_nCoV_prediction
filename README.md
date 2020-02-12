@@ -5,8 +5,8 @@
  * @CreateTime   : 2020-02-03 16:29:37
  * @Description  : The readme file of program
  * @FilePath     : /2019_nCoV_prediction/README.md
- * @LastEditors            : PeripateticWind
- * @LastEditTime           : 2020-02-10 13:16:32
+ * @LastEditor     : PeripateticWind
+ * @LastEditTime   : 2020-02-11 13:24:12
  * @youwant      : add what you want
  * @Copyright (c) 2020, PeripateticWind. All rights reserved.
  -->

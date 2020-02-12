@@ -2,6 +2,11 @@
 \label{classCurveFittingEdge}\index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
 
 
+\hyperlink{classCurveFittingEdge}{Curve\+Fitting\+Edge} g2o图优化模型的边类  
+
+
+
+
 {\ttfamily \#include $<$curve\+\_\+fitting\+\_\+edge.\+h$>$}
 
 
@@ -26,19 +31,24 @@ Collaboration diagram for Curve\+Fitting\+Edge\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW \hyperlink{classCurveFittingEdge_a3a7ee01bc38a44a179faa78d78bcdc0b}{Curve\+Fitting\+Edge} (double x)
-\begin{DoxyCompactList}\small\item\em Construct a new Curve Fitting Edge object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em G2\+O边模型构造函数 \end{DoxyCompactList}\item 
 virtual void \hyperlink{classCurveFittingEdge_a4497b29e2f168d877d7a858457b69fd1}{compute\+Error} () override
 \begin{DoxyCompactList}\small\item\em 计算曲线模型误差 \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classCurveFittingEdge_a517490d29ac656c6a0fc100b1af7cd9f}{read} (std\+::istream \&in) override
-\item 
+\begin{DoxyCompactList}\small\item\em 读盘,留空 \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classCurveFittingEdge_a70bde4a6cbed5fc825a069c6f1f45caa}{write} (std\+::ostream \&out) const override
-\end{DoxyCompactItemize}
-\subsection*{Public Attributes}
+\begin{DoxyCompactList}\small\item\em 存盘,留空 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 double \hyperlink{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}{\+\_\+x}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em x的值 y的值为\+\_\+measurement \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+\hyperlink{classCurveFittingEdge}{Curve\+Fitting\+Edge} g2o图优化模型的边类 
+
+g2o图优化模型的边类，定义残差计算规则和模型的自变量 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
@@ -50,11 +60,13 @@ double \hyperlink{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}{\+\_\
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCurveFittingEdge_a3a7ee01bc38a44a179faa78d78bcdc0b}{}\label{classCurveFittingEdge_a3a7ee01bc38a44a179faa78d78bcdc0b}
 
 
-Construct a new Curve Fitting Edge object. 
+G2\+O边模型构造函数 
+
+Construct a new Curve Fitting Edge object
 
 
-\begin{DoxyParams}{Parameters}
-{\em x} & 模型自变量x \\
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & 模型自变量x \\
 \hline
 \end{DoxyParams}
 
@@ -78,6 +90,10 @@ Construct a new Curve Fitting Edge object.
 \item[{std\+::istream \&}]{in}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCurveFittingEdge_a517490d29ac656c6a0fc100b1af7cd9f}{}\label{classCurveFittingEdge_a517490d29ac656c6a0fc100b1af7cd9f}
+
+
+读盘,留空 
+
 \index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!write@{write}}
 \index{write@{write}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
 \subsubsection[{\texorpdfstring{write(std\+::ostream \&out) const override}{write(std::ostream &out) const override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Curve\+Fitting\+Edge\+::write (
@@ -87,10 +103,18 @@ Construct a new Curve Fitting Edge object.
 ) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classCurveFittingEdge_a70bde4a6cbed5fc825a069c6f1f45caa}{}\label{classCurveFittingEdge_a70bde4a6cbed5fc825a069c6f1f45caa}
 
 
+存盘,留空 
+
+
+
 \subsection{Member Data Documentation}
 \index{Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}!\+\_\+x@{\+\_\+x}}
 \index{\+\_\+x@{\+\_\+x}!Curve\+Fitting\+Edge@{Curve\+Fitting\+Edge}}
-\subsubsection[{\texorpdfstring{\+\_\+x}{_x}}]{\setlength{\rightskip}{0pt plus 5cm}double Curve\+Fitting\+Edge\+::\+\_\+x}\hypertarget{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}{}\label{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}
+\subsubsection[{\texorpdfstring{\+\_\+x}{_x}}]{\setlength{\rightskip}{0pt plus 5cm}double Curve\+Fitting\+Edge\+::\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}{}\label{classCurveFittingEdge_ad0cf7b012c9e4585a6919b982f148449}
+
+
+x的值 y的值为\+\_\+measurement 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

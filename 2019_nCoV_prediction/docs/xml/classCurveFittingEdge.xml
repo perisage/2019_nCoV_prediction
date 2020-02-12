@@ -4,19 +4,19 @@
     <compoundname>CurveFittingEdge</compoundname>
     <basecompoundref prot="public" virt="non-virtual">g2o::BaseUnaryEdge&lt; 1, double, CurveFittingVertex &gt;</basecompoundref>
     <includes refid="curve__fitting__edge_8h" local="no">curve_fitting_edge.h</includes>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classCurveFittingEdge_1ad0cf7b012c9e4585a6919b982f148449" prot="public" static="no" mutable="no">
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCurveFittingEdge_1ad0cf7b012c9e4585a6919b982f148449" prot="private" static="no" mutable="no">
         <type>double</type>
         <definition>double CurveFittingEdge::_x</definition>
         <argsstring></argsstring>
         <name>_x</name>
         <briefdescription>
-        </briefdescription>
+<para>x的值 y的值为_measurement </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/curve_fitting_edge.h" line="68" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="68" bodyend="-1"/>
+        <location file="include/curve_fitting_edge.h" line="77" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -30,11 +30,11 @@
           <declname>x</declname>
         </param>
         <briefdescription>
-<para>Construct a new Curve Fitting Edge object. </para>        </briefdescription>
+<para>G2O边模型构造函数 </para>        </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
+<para>Construct a new Curve Fitting Edge object</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>x</parametername>
+<parametername direction="in">x</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>模型自变量x </para></parameterdescription>
@@ -43,7 +43,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/curve_fitting_edge.h" line="45" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="45" bodyend="49"/>
+        <location file="include/curve_fitting_edge.h" line="53" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="53" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classCurveFittingEdge_1a4497b29e2f168d877d7a858457b69fd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/curve_fitting_edge.h" line="55" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="55" bodyend="61"/>
+        <location file="include/curve_fitting_edge.h" line="63" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="63" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classCurveFittingEdge_1a517490d29ac656c6a0fc100b1af7cd9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -68,12 +68,12 @@
           <declname>in</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>读盘,留空 </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/curve_fitting_edge.h" line="64" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="64" bodyend="64"/>
+        <location file="include/curve_fitting_edge.h" line="72" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="72" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classCurveFittingEdge_1a70bde4a6cbed5fc825a069c6f1f45caa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -85,18 +85,18 @@
           <declname>out</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>存盘,留空 </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/curve_fitting_edge.h" line="65" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="65" bodyend="65"/>
+        <location file="include/curve_fitting_edge.h" line="74" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="74" bodyend="74"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="classCurveFittingEdge" kindref="compound">CurveFittingEdge</ref> g2o图优化模型的边类 </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>g2o图优化模型的边类，定义残差计算规则和模型的自变量 </para>    </detaileddescription>
     <inheritancegraph>
       <node id="11">
         <label>g2o::BaseUnaryEdge&lt; 1, double, CurveFittingVertex &gt;</label>
@@ -119,9 +119,9 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/curve_fitting_edge.h" line="36" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="35" bodyend="69"/>
+    <location file="include/curve_fitting_edge.h" line="43" column="1" bodyfile="include/curve_fitting_edge.h" bodystart="42" bodyend="78"/>
     <listofallmembers>
-      <member refid="classCurveFittingEdge_1ad0cf7b012c9e4585a6919b982f148449" prot="public" virt="non-virtual"><scope>CurveFittingEdge</scope><name>_x</name></member>
+      <member refid="classCurveFittingEdge_1ad0cf7b012c9e4585a6919b982f148449" prot="private" virt="non-virtual"><scope>CurveFittingEdge</scope><name>_x</name></member>
       <member refid="classCurveFittingEdge_1a4497b29e2f168d877d7a858457b69fd1" prot="public" virt="virtual"><scope>CurveFittingEdge</scope><name>computeError</name></member>
       <member refid="classCurveFittingEdge_1a3a7ee01bc38a44a179faa78d78bcdc0b" prot="public" virt="non-virtual"><scope>CurveFittingEdge</scope><name>CurveFittingEdge</name></member>
       <member refid="classCurveFittingEdge_1a517490d29ac656c6a0fc100b1af7cd9f" prot="public" virt="virtual"><scope>CurveFittingEdge</scope><name>read</name></member>

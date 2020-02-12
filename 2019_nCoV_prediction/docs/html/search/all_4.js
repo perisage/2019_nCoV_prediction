@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ncov',['nCoV',['../classnCoV.html',1,'nCoV'],['../classnCoV.html#a30d4a90c5f401cf6943e104ec737dc48',1,'nCoV::nCoV()']]],
-  ['ncov_2ecpp',['nCoV.cpp',['../nCoV_8cpp.html',1,'']]],
-  ['ncov_2eh',['nCoV.h',['../nCoV_8h.html',1,'']]]
+  ['main',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]]
 ];

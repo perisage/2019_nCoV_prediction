@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>application document: nCoV Class Reference</title>
+<title>Application Document: nCoV Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">application document
+   <div id="projectname">Application Document
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="usergroup0.html"><span>PeripateticWind</span></a></li>
@@ -93,21 +94,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="classnCoV.html" title="nCoV class ">nCoV</a> class  
+ <a href="classnCoV.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="nCoV_8h_source.html">nCoV.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a30d4a90c5f401cf6943e104ec737dc48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnCoV.html#a30d4a90c5f401cf6943e104ec737dc48">nCoV</a> (int predictDays)</td></tr>
-<tr class="memdesc:a30d4a90c5f401cf6943e104ec737dc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classnCoV.html#a30d4a90c5f401cf6943e104ec737dc48" title="Construct a new nCoV::nCoV object. ">nCoV::nCoV</a> object.  <a href="#a30d4a90c5f401cf6943e104ec737dc48">More...</a><br /></td></tr>
+<tr class="memdesc:a30d4a90c5f401cf6943e104ec737dc48"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classnCoV.html" title="nCoV class ">nCoV</a> class，用以建立图模型并优化，最后预测  <a href="#a30d4a90c5f401cf6943e104ec737dc48">More...</a><br /></td></tr>
 <tr class="separator:a30d4a90c5f401cf6943e104ec737dc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:acf5ddd73cab8522622b2602258507c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnCoV.html#acf5ddd73cab8522622b2602258507c08">optimize</a> ()</td></tr>
-<tr class="memdesc:acf5ddd73cab8522622b2602258507c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">G2O图模型优化  <a href="#acf5ddd73cab8522622b2602258507c08">More...</a><br /></td></tr>
+<tr class="memdesc:acf5ddd73cab8522622b2602258507c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">模型优化函数  <a href="#acf5ddd73cab8522622b2602258507c08">More...</a><br /></td></tr>
 <tr class="separator:acf5ddd73cab8522622b2602258507c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0b30d27da271601d45c144c6a3da2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnCoV.html#a5a0b30d27da271601d45c144c6a3da2d">predict</a> ()</td></tr>
-<tr class="memdesc:a5a0b30d27da271601d45c144c6a3da2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据优化的图模型，预测指定天数每天的感染人数  <a href="#a5a0b30d27da271601d45c144c6a3da2d">More...</a><br /></td></tr>
+<tr class="memdesc:a5a0b30d27da271601d45c144c6a3da2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">模型预测函数  <a href="#a5a0b30d27da271601d45c144c6a3da2d">More...</a><br /></td></tr>
 <tr class="separator:a5a0b30d27da271601d45c144c6a3da2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -128,13 +132,15 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a8e122688ffc8ee32df05f0cb6ef25920"><td class="mdescLeft">&#160;</td><td class="mdescRight">优化模型的因变量，为每日累计感染人数  <a href="#a8e122688ffc8ee32df05f0cb6ef25920">More...</a><br /></td></tr>
 <tr class="separator:a8e122688ffc8ee32df05f0cb6ef25920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae34cb58fd08703599158b69853b659a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnCoV.html#ae34cb58fd08703599158b69853b659a2">_parameter</a> [3]</td></tr>
+<tr class="memdesc:ae34cb58fd08703599158b69853b659a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">待优化的SIR模型参数的初值  <a href="#ae34cb58fd08703599158b69853b659a2">More...</a><br /></td></tr>
 <tr class="separator:ae34cb58fd08703599158b69853b659a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6980bf4492a8ce437b15ac9625eacfce"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnCoV.html#a6980bf4492a8ce437b15ac9625eacfce">_parameterEstimated</a></td></tr>
+<tr class="memdesc:a6980bf4492a8ce437b15ac9625eacfce"><td class="mdescLeft">&#160;</td><td class="mdescRight">优化后的SIR模型参数值  <a href="#a6980bf4492a8ce437b15ac9625eacfce">More...</a><br /></td></tr>
 <tr class="separator:a6980bf4492a8ce437b15ac9625eacfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A test class.</p>
-<p>A more elaborate class description. </p>
+<div class="textblock"><p><a class="el" href="classnCoV.html" title="nCoV class ">nCoV</a> class </p>
+<p><a class="el" href="classnCoV.html" title="nCoV class ">nCoV</a> class to optimaize the graph model and predict infected numbers </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a30d4a90c5f401cf6943e104ec737dc48"></a>
 <div class="memitem">
@@ -150,10 +156,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="classnCoV.html#a30d4a90c5f401cf6943e104ec737dc48" title="Construct a new nCoV::nCoV object. ">nCoV::nCoV</a> object. </p>
+<p><a class="el" href="classnCoV.html" title="nCoV class ">nCoV</a> class，用以建立图模型并优化，最后预测 </p>
+<p>Construct a new <a class="el" href="classnCoV.html#a30d4a90c5f401cf6943e104ec737dc48" title="nCoV class，用以建立图模型并优化，最后预测 ">nCoV::nCoV</a> object</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">predictDays</td><td>the days you want to predict </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">predictDays</td><td>the days you want to predict </td></tr>
   </table>
   </dd>
 </dl>
@@ -182,7 +189,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>G2O图模型优化 </p>
+<p>模型优化函数 </p>
+<p>G2O图模型优化</p>
+<p>G2O图模型优化，用来建立SIR模型，优化该模型的参数值 </p><dl class="section post"><dt>Postcondition</dt><dd>之后需要调用prediction函数进行预测 </dd></dl>
 
 </div>
 </div>
@@ -207,7 +216,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>根据优化的图模型，预测指定天数每天的感染人数 </p>
+<p>模型预测函数 </p>
+<p>根据SIR模型，预测感染人数</p>
+<p>根据图模型优化的参数，建立SIR模型，预测指定天数每天的感染人数 </p><dl class="section pre"><dt>Precondition</dt><dd>必须先调用optimize函数进行模型优化 </dd></dl>
 
 </div>
 </div>
@@ -274,6 +285,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>待优化的SIR模型参数的初值 </p>
+
 </div>
 </div>
 <a class="anchor" id="a6980bf4492a8ce437b15ac9625eacfce"></a>
@@ -293,6 +306,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>优化后的SIR模型参数值 </p>
 
 </div>
 </div>
