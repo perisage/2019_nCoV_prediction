@@ -1,0 +1,78 @@
+[OPTIONS]
+Compiled file=chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=Application Document
+
+[WINDOWS]
+main="Application Document","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+curve__fitting__edge_8h_source.html
+curve__fitting__vertex_8h_source.html
+nCoV_8h_source.html
+curve__fitting__edge_8h.html
+curve__fitting__vertex_8h.html
+nCoV_8h.html
+main_8cpp.html
+nCoV_8cpp.html
+todo.html
+bug.html
+classCurveFittingEdge.html
+classCurveFittingEdge-members.html
+classCurveFittingVertex.html
+classCurveFittingVertex-members.html
+classnCoV.html
+classnCoV-members.html
+graph_legend.html
+dir_d44c64559bbebec7f509842c48db8b23.html
+dir_68267d1309a1af8e8297ef4c3efbcdba.html
+dir_000001_000000.html
+index.html
+pages.html
+annotated.html
+classes.html
+hierarchy.html
+inherits.html
+functions.html
+functions_func.html
+functions_vars.html
+files.html
+globals.html
+globals_func.html
+usergroup0.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+curve__fitting__edge_8h__incl.png
+curve__fitting__edge_8h__dep__incl.png
+curve__fitting__vertex_8h__incl.png
+curve__fitting__vertex_8h__dep__incl.png
+nCoV_8h__incl.png
+nCoV_8h__dep__incl.png
+main_8cpp__incl.png
+nCoV_8cpp__incl.png
+classCurveFittingEdge__inherit__graph.png
+classCurveFittingEdge__coll__graph.png
+classCurveFittingVertex__inherit__graph.png
+classCurveFittingVertex__coll__graph.png
+graph_legend.png
+dir_68267d1309a1af8e8297ef4c3efbcdba_dep.png
+inherit_graph_0.png
+inherit_graph_1.png
+inherit_graph_2.png

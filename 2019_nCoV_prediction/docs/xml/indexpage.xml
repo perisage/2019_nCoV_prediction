@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>The 2019-nCoV Prediction Application</title>
+    <detaileddescription>
+<para>the 2019_nCoV prediction application main node <simplesect kind="author"><para>PeripateticWind (<ulink url="mailto:zhangzhihong@stu.xjtu.edu.cn">zhangzhihong@stu.xjtu.edu.cn</ulink>) </para></simplesect>
+<simplesect kind="version"><para>1.0.0 </para></simplesect>
+<simplesect kind="date"><para>2020-02-10 22:42:35 </para></simplesect>
+<simplesect kind="par"><title>LastEditor</title><para>PeripateticWind </para></simplesect>
+<simplesect kind="par"><title>LastEditTime</title><para>2020-02-10 22:42:35 </para></simplesect>
+<simplesect kind="par"><title>Email</title><para><ulink url="mailto:zhangzhihong@stu.xjtu.edu.cn">zhangzhihong@stu.xjtu.edu.cn</ulink> </para></simplesect>
+<simplesect kind="par"><title>Company</title><para>Xi&apos;an Jiaotong University </para></simplesect>
+<xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para><orderedlist>
+<listitem><para>to add the details of the change log </para></listitem></orderedlist>
+</para></xrefdescription></xrefsect><xrefsect id="bug_1_bug000001"><xreftitle>Bug</xreftitle><xrefdescription><para><orderedlist>
+<listitem><para>the date will be wrong if no data of current day </para></listitem></orderedlist>
+</para></xrefdescription></xrefsect></para><sect1 id="index_1introduction_ection">
+<title>Introduction</title>
+<para>2019_nCoV 每日感染人数预测程序 </para></sect1>
+<sect1 id="index_1dependencies_section">
+<title>Dependencies</title>
+<para><orderedlist>
+<listitem><para>用到的C++相关库: G2O GLOG(含youibot log system) GFLAGS</para></listitem><listitem><para>用到的python功能包: math matplotlib </para></listitem></orderedlist>
+</para></sect1>
+<sect1 id="index_1note_section">
+<title>Note Items</title>
+<para><orderedlist>
+<listitem><para>计算机上需要预先安装G2O。</para></listitem><listitem><para>日志系统使用的是公司的日志系统，暂不开源，请谅解。如果要在自己的计算机上运行，可将代码中的日志替换为C++标准输出<computeroutput>std::cout&lt;&lt;</computeroutput>,并取消main中Glogger对象的定义即可。 </para></listitem></orderedlist>
+</para></sect1>
+<sect1 id="index_1install_section">
+<title>Installation</title>
+<para>Just as the follows </para><sect2 id="index_1step1">
+<title>Step 1: install g2o and youibot log system from github</title>
+</sect2>
+<sect2 id="index_1step2">
+<title>Step 2: install math and matplotlib packages for python</title>
+</sect2>
+<sect2 id="index_1step3">
+<title>Step 3: install the application</title>
+<para><programlisting><codeline><highlight class="normal">$<sp/>cd<sp/>2019_nCoV_prediction</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>mkdir<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>cmake<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>make</highlight></codeline>
+</programlisting> <simplesect kind="copyright"><para>Copyright (c) 2020 PeripateticWind. All rights reserved. </para></simplesect>
+<simplesect kind="par"><title>License</title><para>Licensed under the MIT License. </para></simplesect>
+<simplesect kind="par"><title>Changelog</title><para><table rows="2" cols="4"><caption>Change Log</caption>
+<row>
+<entry thead="yes"><para>Date </para></entry><entry thead="yes"><para>Version </para></entry><entry thead="yes"><para>Author </para></entry><entry thead="yes"><para>Description </para></entry></row>
+<row>
+<entry thead="no"><para>2020-02-10 22:42:35 </para></entry><entry thead="no"><para>1.0.0 </para></entry><entry thead="no"><para>PeripateticWind </para></entry><entry thead="no"><para>change log </para></entry></row>
+</table>
+</para></simplesect>
+</para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

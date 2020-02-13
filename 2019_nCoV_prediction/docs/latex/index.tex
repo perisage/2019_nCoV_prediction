@@ -1,0 +1,77 @@
+the 2019\+\_\+n\+CoV prediction application main node \begin{DoxyAuthor}{Author}
+Peripatetic\+Wind (\href{mailto:zhangzhihong@stu.xjtu.edu.cn}{\tt zhangzhihong@stu.\+xjtu.\+edu.\+cn}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/02-\/10 22\+:42\+:35 
+\end{DoxyDate}
+\begin{DoxyParagraph}{Last\+Editor}
+Peripatetic\+Wind 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Last\+Edit\+Time}
+2020-\/02-\/10 22\+:42\+:35 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Email}
+\href{mailto:zhangzhihong@stu.xjtu.edu.cn}{\tt zhangzhihong@stu.\+xjtu.\+edu.\+cn} 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Company}
+Xi\textquotesingle{}an Jiaotong University 
+\end{DoxyParagraph}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]
+\begin{DoxyEnumerate}
+\item to add the details of the change log 
+\end{DoxyEnumerate}\end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]
+\begin{DoxyEnumerate}
+\item the date will be wrong if no data of current day 
+\end{DoxyEnumerate}\end{DoxyRefDesc}
+\hypertarget{index_introduction_ection}{}\section{Introduction}\label{index_introduction_ection}
+2019\+\_\+n\+CoV 每日感染人数预测程序 \hypertarget{index_dependencies_section}{}\section{Dependencies}\label{index_dependencies_section}
+
+\begin{DoxyEnumerate}
+\item 用到的\+C++相关库\+: G2O G\+L\+OG(含youibot log system) G\+F\+L\+A\+GS
+\item 用到的python功能包\+: math matplotlib 
+\end{DoxyEnumerate}\hypertarget{index_note_section}{}\section{Note Items}\label{index_note_section}
+
+\begin{DoxyEnumerate}
+\item 计算机上需要预先安装\+G2\+O。
+\item 日志系统使用的是公司的日志系统，暂不开源，请谅解。如果要在自己的计算机上运行，可将代码中的日志替换为\+C++标准输出{\ttfamily std\+::cout$<$$<$},并取消main中\+Glogger对象的定义即可。 
+\end{DoxyEnumerate}\hypertarget{index_install_section}{}\section{Installation}\label{index_install_section}
+Just as the follows \hypertarget{index_step1}{}\subsection{Step 1\+: install g2o and youibot log system from github}\label{index_step1}
+\hypertarget{index_step2}{}\subsection{Step 2\+: install math and matplotlib packages for python}\label{index_step2}
+\hypertarget{index_step3}{}\subsection{Step 3\+: install the application}\label{index_step3}
+
+\begin{DoxyCode}
+$ cd 2019\_nCoV\_prediction
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+\end{DoxyCode}
+ \begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 Peripatetic\+Wind. All rights reserved. 
+\end{DoxyCopyright}
+\begin{DoxyParagraph}{License}
+Licensed under the M\+IT License. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Changelog}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*4{|X[-1]}|}
+\caption{Change Log}\label{_}\\
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Date }&{\bf Version }&{\bf Author }&{\bf Description }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Date }&{\bf Version }&{\bf Author }&{\bf Description }\\\cline{1-4}
+\endhead
+2020-\/02-\/10 22\+:42\+:35 &1.\+0.\+0 &Peripatetic\+Wind &change log \\\cline{1-4}
+\end{longtabu}
+
+\end{DoxyParagraph}
