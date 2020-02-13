@@ -1,4 +1,18 @@
 ---
+
+#####
+ # @Author       : PeripateticWind
+ # @Email        : zhangzhihong@stu.xjtu.edu.cn
+ # @Company      : Xi'an Jiaotong University
+ # @CreateTime   : 2020-02-09 14:03:14
+ # @Description  : personal clang-format setting
+ # @FilePath     : .clang-format
+ # @LastEditors  : PeripateticWind
+ # @LastEditTime : 2020-02-09 17:00:02
+ # @youwant      : add what you want
+ # @Copyright    : Copyright (c) 2020, PeripateticWind. All rights reserved.
+#####
+
 # 语言: None, Cpp, Java, JavaScript, ObjC, Proto, TableGen, TextProto
 Language:        Cpp
 # 代码基本风格：可选项有： LLVM Google Chromium Mozilla WebKit Microsoft

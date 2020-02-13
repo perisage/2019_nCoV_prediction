@@ -1,4 +1,4 @@
-# vscode 
+# vscode
 .vscode/
 
 # project build
@@ -6,7 +6,10 @@
 # npm
 node_modules/
 # docs
-2019_nCoV_prediction/docs/**
+2019_nCoV_prediction/docs/*
+!2019_nCoV_prediction/docs/html
+!2019_nCoV_prediction/docs/xml
+!2019_nCoV_prediction/docs/latex
 # 2019_nCoV_prediction/docs/*.cmake
 # 2019_nCoV_prediction/docs/Doxy*
 
